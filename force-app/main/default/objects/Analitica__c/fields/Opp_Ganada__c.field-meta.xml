@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Ganada__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+ISPICKVAL(Tipo__c,&apos;Forecast&apos;), 
+IF(NOT(ISBLANK(Oportunidad__c)),ISPICKVAL(Oportunidad__r.StageName,&apos;Ganada&apos;), 
+IF(NOT(ISBLANK(Linea_de_Proyecto__c)),ISPICKVAL(Linea_de_Proyecto__r.Oportunidad__r.StageName,&apos;Ganada&apos;),FALSE)), 
+FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opp Ganada</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

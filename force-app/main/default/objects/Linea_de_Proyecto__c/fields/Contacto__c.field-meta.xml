@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contacto__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indica si el responsable de Software puede o no contactar directamente con el cliente</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows if the software responsible can contact directly with the client</inlineHelpText>
+    <label>Contacto</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

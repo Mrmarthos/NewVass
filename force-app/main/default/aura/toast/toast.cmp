@@ -1,0 +1,33 @@
+<aura:component >
+  <aura:attribute name="type" type="String" default="success"
+    description="Can be: success, info, error, or warning" />
+  <aura:attribute name="title" type="String" default=""
+    description="Main text of the Toast"/>
+  <aura:attribute name="description" type="String" default=""
+    description="Secondary text of the Toast"/>
+  <aura:attribute name="delay" type="Integer" default="5000"
+    description="Number of milliseconds until Toast is auto-hidden"/>
+
+  <aura:handler event="c:ShowToastEvent" action="{!c.handleShowToast}"/>
+
+  <div aura:id="divToast" class="slds-notify_container slds-hide">
+    <div class="{!'slds-notify slds-notify_toast slds-theme_' + v.type}" role="alert">
+      <span class="slds-assistive-text">{!v.type}</span>
+      <span class="{!'slds-icon_container slds-m-right_small slds-no-flex slds-align-top slds-icon-utility-' + v.type}" title="{!v.type}">
+        <lightning:icon iconName="{!'utility:' + v.type}"
+            variant="{!v.type != 'warning' ? 'inverse' : ''}" size="small"/>
+      </span>
+
+      <div class="slds-notify__content">
+        <h2 class="slds-text-heading_small ">{!v.title}</h2>
+        <p>{!v.description}</p>
+      </div>
+
+      <lightning:buttonIcon iconName="utility:close" variant="bare" alternativeText="Close"
+        iconClass="{!v.type == 'warning' ? 'light' : 'dark'}" size="large"
+        class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse"
+        onclick="{!c.close}"/>
+    </div>
+  </div>
+
+</aura:component>

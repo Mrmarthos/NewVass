@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licencias</fullName>
+    <fields>Fabricante__c</fields>
+    <fields>Fecha_de_activacion__c</fields>
+    <fields>Fecha_de_expiracion__c</fields>
+    <fields>Precio_unitario__c</fields>
+    <fields>Comision__c</fields>
+    <fields>Margen__c</fields>
+    <label>Licencias</label>
+</CompactLayout>

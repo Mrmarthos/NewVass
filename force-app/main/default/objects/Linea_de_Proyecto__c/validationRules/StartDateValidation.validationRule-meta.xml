@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StartDateValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Fecha_Inicio__c &lt; Fecha_Cierre_Oportunidad__c</errorConditionFormula>
+    <errorDisplayField>Fecha_Inicio__c</errorDisplayField>
+    <errorMessage>The Project Start Date cannot be earlier than the Opportunity Close Date. Please provide a valid date.</errorMessage>
+</ValidationRule>

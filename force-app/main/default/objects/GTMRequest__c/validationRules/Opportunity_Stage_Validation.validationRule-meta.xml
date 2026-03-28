@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(RelatedOpportunity__c!=null, ISNEW(),
+
+NOT (
+OR(
+ISPICKVAL(RelatedOpportunity__r.StageName, &quot;Identificada&quot;),
+ISPICKVAL(RelatedOpportunity__r.StageName, &quot;Solicitada&quot;),
+ISPICKVAL(RelatedOpportunity__r.StageName, &quot;preventa&quot;)
+)))</errorConditionFormula>
+    <errorDisplayField>RelatedOpportunity__c</errorDisplayField>
+    <errorMessage>The related opportunity stage must be in the Identified, Requested or Presale</errorMessage>
+</ValidationRule>

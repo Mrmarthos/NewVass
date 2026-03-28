@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_x_Prob__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(Fecha_de_cierre__c &lt; DATE(YEAR(TODAY()) , MONTH(TODAY()) , 01),ISPICKVAL(Tipo__c,&apos;Forecast&apos;)) , 0 , 
+IF(NOT(ISBLANK(Linea_de_Proyecto__c)),Linea_de_Proyecto__r.Importe_prorrateado_x_prob__c, 
+IF(NOT(ISBLANK(Oportunidad__c)),Oportunidad__r.Importe_prorrateado__c * Probabilidad__c, 
+IF(ISPICKVAL(Tipo__c,&apos;Ingresos vs costes&apos;),Ingresos_Reales__c,Importe__c))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Importe x Prob</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

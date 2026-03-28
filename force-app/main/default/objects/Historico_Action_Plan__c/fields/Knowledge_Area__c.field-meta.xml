@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Knowledge_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Knowledge Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agile Solutions Tools (Jira)</fullName>
+                <default>false</default>
+                <label>Agile Solutions Tools (Jira)</label>
+            </value>
+            <value>
+                <fullName>API Gateway &amp; Integration (Mulesoft, CA (Api Gateway), ApiGee)</fullName>
+                <default>false</default>
+                <label>API Gateway &amp; Integration (Mulesoft, CA (Api Gateway), ApiGee)</label>
+            </value>
+            <value>
+                <fullName>Backend Development (Java OpenStack, .Net, Microservices)</fullName>
+                <default>false</default>
+                <label>Backend Development (Java OpenStack, .Net, Microservices)</label>
+            </value>
+            <value>
+                <fullName>Blockchain (Tokenization, SmartContracts, NFTs)</fullName>
+                <default>false</default>
+                <label>Blockchain (Tokenization, SmartContracts, NFTs)</label>
+            </value>
+            <value>
+                <fullName>BPM (Appian, Mendix, Pega, Outsystems)</fullName>
+                <default>false</default>
+                <label>BPM (Appian, Mendix, Pega, Outsystems)</label>
+            </value>
+            <value>
+                <fullName>Branding Services</fullName>
+                <default>false</default>
+                <label>Branding Services</label>
+            </value>
+            <value>
+                <fullName>Business Consulting</fullName>
+                <default>false</default>
+                <label>Business Consulting</label>
+            </value>
+            <value>
+                <fullName>CIB Solutions (Trading, Clearing, Real Time Market Data, Risk Management)</fullName>
+                <default>false</default>
+                <label>CIB Solutions (Trading, Clearing, Real Time Market Data, Risk Management)</label>
+            </value>
+            <value>
+                <fullName>Cloud Architecture &amp; Data Consultancy &amp; Design</fullName>
+                <default>false</default>
+                <label>Cloud Architecture &amp; Data Consultancy &amp; Design</label>
+            </value>
+            <value>
+                <fullName>Cognitive Agents (Chatbot, Avatars, Google DialogFlow, IBM Watson)</fullName>
+                <default>false</default>
+                <label>Cognitive Agents (Chatbot, Avatars, Google DialogFlow, IBM Watson)</label>
+            </value>
+            <value>
+                <fullName>CRM (Salesforce, Microsoft Dynamics, Siebel)</fullName>
+                <default>false</default>
+                <label>CRM (Salesforce, Microsoft Dynamics, Siebel)</label>
+            </value>
+            <value>
+                <fullName>CyberSecurity</fullName>
+                <default>false</default>
+                <label>CyberSecurity</label>
+            </value>
+            <value>
+                <fullName>Data Analytics &amp; BI (PowerBI, Azure Data, Snowflake, Qlik)</fullName>
+                <default>false</default>
+                <label>Data Analytics &amp; BI (PowerBI, Azure Data, Snowflake, Qlik)</label>
+            </value>
+            <value>
+                <fullName>Data Architecture Cloud &amp; On-Permise (Powercenter, Databricks, Snowflake, Google Cloud, Informatica BDM)</fullName>
+                <default>false</default>
+                <label>Data Architecture Cloud &amp; On-Permise (Powercenter, Databricks, Snowflake, Google Cloud, Informatica BDM)</label>
+            </value>
+            <value>
+                <fullName>Data Governance &amp; Modeling (IBM Cloud Pack, Informatica)</fullName>
+                <default>false</default>
+                <label>Data Governance &amp; Modeling (IBM Cloud Pack, Informatica)</label>
+            </value>
+            <value>
+                <fullName>Digital Business Platforms (Adobe, Liferay)</fullName>
+                <default>false</default>
+                <label>Digital Business Platforms (Adobe, Liferay)</label>
+            </value>
+            <value>
+                <fullName>Digital Consulting</fullName>
+                <default>false</default>
+                <label>Digital Consulting</label>
+            </value>
+            <value>
+                <fullName>Document Solutions (Documentum, Captiva, xECM)</fullName>
+                <default>false</default>
+                <label>Document Solutions (Documentum, Captiva, xECM)</label>
+            </value>
+            <value>
+                <fullName>Ecommerce (Salesforce Commerce, SAP Customer Experience, Magento, Commerce Tools)</fullName>
+                <default>false</default>
+                <label>Ecommerce (Salesforce Commerce, SAP Customer Experience, Magento, Commerce Tools)</label>
+            </value>
+            <value>
+                <fullName>Enterprise Search (Elastic Search, SolR)</fullName>
+                <default>false</default>
+                <label>Enterprise Search (Elastic Search, SolR)</label>
+            </value>
+            <value>
+                <fullName>ERP Solutions (SAP)</fullName>
+                <default>false</default>
+                <label>ERP Solutions (SAP)</label>
+            </value>
+            <value>
+                <fullName>Front End Development (Vue, React, Angular)</fullName>
+                <default>false</default>
+                <label>Front End Development (Vue, React, Angular)</label>
+            </value>
+            <value>
+                <fullName>IA/ML Cloud &amp; IA Custom Solutions (Azure ML, TensorFlow, Keras, Google Vertex, KL30)</fullName>
+                <default>false</default>
+                <label>IA/ML Cloud &amp; IA Custom Solutions (Azure ML, TensorFlow, Keras, Google Vertex, KL30)</label>
+            </value>
+            <value>
+                <fullName>Infrastructure Cloud &amp; OnPremise (Terraform, Ansible, Cloud providers, Containers, Openshift, VMWare Tanzu)</fullName>
+                <default>false</default>
+                <label>Infrastructure Cloud &amp; OnPremise (Terraform, Ansible, Cloud providers, Containers, Openshift, VMWare Tanzu)</label>
+            </value>
+            <value>
+                <fullName>IoT (Barbara IoT)</fullName>
+                <default>false</default>
+                <label>IoT (Barbara IoT)</label>
+            </value>
+            <value>
+                <fullName>Mobile (Android, IOS, Kotlin, Ionic)</fullName>
+                <default>false</default>
+                <label>Mobile (Android, IOS, Kotlin, Ionic)</label>
+            </value>
+            <value>
+                <fullName>PMO &amp; Agile Offices (Scrum, Project Management)</fullName>
+                <default>false</default>
+                <label>PMO &amp; Agile Offices (Scrum, Project Management)</label>
+            </value>
+            <value>
+                <fullName>Portal Enterprise Platform (Oracle Webcenter, Office 365)</fullName>
+                <default>false</default>
+                <label>Portal Enterprise Platform (Oracle Webcenter, Office 365)</label>
+            </value>
+            <value>
+                <fullName>Portal Open Source (Magnolia, Wordpress, PHP)</fullName>
+                <default>false</default>
+                <label>Portal Open Source (Magnolia, Wordpress, PHP)</label>
+            </value>
+            <value>
+                <fullName>Process Mining (Celonis, Signavio)</fullName>
+                <default>false</default>
+                <label>Process Mining (Celonis, Signavio)</label>
+            </value>
+            <value>
+                <fullName>QA Solutions (Kwat, Selenium, Functional Testing, Sonar)</fullName>
+                <default>false</default>
+                <label>QA Solutions (Kwat, Selenium, Functional Testing, Sonar)</label>
+            </value>
+            <value>
+                <fullName>Quantum Computing</fullName>
+                <default>false</default>
+                <label>Quantum Computing</label>
+            </value>
+            <value>
+                <fullName>RPA / RDA Automation Solutions (UIPath, BluePrism, AutoHotkey)</fullName>
+                <default>false</default>
+                <label>RPA / RDA Automation Solutions (UIPath, BluePrism, AutoHotkey)</label>
+            </value>
+            <value>
+                <fullName>Salesforce Financial Service Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Financial Service Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce Marketing</fullName>
+                <default>false</default>
+                <label>Salesforce Marketing</label>
+            </value>
+            <value>
+                <fullName>Salesforce sales/services</fullName>
+                <default>false</default>
+                <label>Salesforce sales/services</label>
+            </value>
+            <value>
+                <fullName>SecDevOps (Jenkins, Bamboo, Gitlab)</fullName>
+                <default>false</default>
+                <label>SecDevOps (Jenkins, Bamboo, Gitlab)</label>
+            </value>
+            <value>
+                <fullName>Subscription &amp; Payments Platforms (Zuora, Chargebee)</fullName>
+                <default>false</default>
+                <label>Subscription &amp; Payments Platforms (Zuora, Chargebee)</label>
+            </value>
+            <value>
+                <fullName>Tesorería (Murex, Calypso)</fullName>
+                <default>false</default>
+                <label>Tesorería (Murex, Calypso)</label>
+            </value>
+            <value>
+                <fullName>UX/UI</fullName>
+                <default>false</default>
+                <label>UX/UI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

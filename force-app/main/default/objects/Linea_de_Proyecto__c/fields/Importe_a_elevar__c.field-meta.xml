@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_a_elevar__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(AND( Precio_Venta__c &gt;1 &amp;&amp;Intercompany__c==false &amp;&amp;Importe_de_licencias__c==0 )  ,Precio_Venta__c + Importe_de_licencias__c,
+if(Intercompany__c==true, Importe_Total_Intercompany__c ,
+if(Importe_de_licencias__c&gt;0,Importe_de_licencias__c,Importe_total_2__c + Importe_de_licencias__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Importe a elevar</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

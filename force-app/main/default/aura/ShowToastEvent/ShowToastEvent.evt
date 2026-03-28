@@ -1,0 +1,6 @@
+<aura:event type="APPLICATION" description="Show Toast Event">
+  <aura:attribute name="type" type="String" default="success"/>
+  <aura:attribute name="title" type="String" default=""/>
+  <aura:attribute name="description" type="String" default=""/>
+  <aura:attribute name="delay" type="Integer" default="5000"/>
+</aura:event>

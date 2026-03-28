@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EPPM_Block</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(Sede__c, &apos;1410&apos;) &amp;&amp; $User.Alias &lt;&gt; &quot;AUser&quot;</errorConditionFormula>
+    <errorMessage>The opportunity is currently locked due to the EPPM migration. You will be notified once editing is re-enabled. Thank you and sorry for the inconvenience</errorMessage>
+</ValidationRule>

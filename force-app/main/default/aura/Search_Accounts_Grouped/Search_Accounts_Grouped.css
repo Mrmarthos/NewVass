@@ -1,0 +1,15 @@
+.THIS {
+}
+.THIS.hiddenTable{
+    display:none;
+}
+.THIS.showTable{
+    display:block;
+}
+.THIS .boton{
+    background-color: #16325c;
+    color: #fff; 
+}
+.THIS.rightBox{
+    float:right;
+}

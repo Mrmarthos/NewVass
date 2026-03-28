@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lineas_de_gerentes_responsables_de_area</fullName>
+    <active>false</active>
+    <description>Los gerentes y responsables de una gerencia o área respectivamente, podrán modificar únicamente las líneas de proyecto que coincidan con su gerencia o área.
+El resto de usuarios con visibilidad sobre la oportunidad, podrán modificar sin restricciones</description>
+    <errorConditionFormula>NOT(
+((TEXT($User.Gerencia__c) = TEXT(Gerencia__c)) &amp;&amp; ($UserRole.DeveloperName = &apos;Gerente_de_operaciones&apos;)) ||
+((TEXT($User.Area__c)  = TEXT(Area__c)) &amp;&amp; ($UserRole.DeveloperName = &apos;Responsable_de_area&apos;)) ||
+(($UserRole.DeveloperName &lt;&gt; &apos;Responsable_de_area&apos;) &amp;&amp; ($UserRole.DeveloperName &lt;&gt; &apos;Gerente_de_operaciones&apos;))||
+( $User.Gerente__c =True &amp;&amp; (TEXT($User.Gerencia__c) = TEXT(Gerencia__c)))
+)</errorConditionFormula>
+    <errorMessage>Esta línea de proyecto no corresponde a tu gerencia y/o área</errorMessage>
+</ValidationRule>

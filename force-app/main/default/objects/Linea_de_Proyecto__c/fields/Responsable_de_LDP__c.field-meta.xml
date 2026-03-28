@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsable_de_LDP__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>antiguamente era el campo Responsable_de_la_oferta__c</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Operation user of the area involved</inlineHelpText>
+    <label>Responsable de oferta(Operaciones)</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>El responsable de la oferta tiene que estar dada de alta como gerente en SAP.</errorMessage>
+        <filterItems>
+            <field>User.Gerente__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Lineas_de_Proyecto</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

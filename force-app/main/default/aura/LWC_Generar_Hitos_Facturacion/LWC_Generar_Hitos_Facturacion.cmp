@@ -1,0 +1,47 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="Generacion_Hitos_Controller"  access="global" >
+	<!-- attributes -->
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="errors" type="Object" default="[]"/>
+ <aura:attribute name="draftValues" type="Object" default="[]"/>
+       <aura:attribute name="title" type="String" default="Billing Milestones"/>
+      <aura:attribute name="showTable" type="Boolean" default="False"/>
+ <ltng:require styles="{!$Resource.cssModal}"/>
+    <!-- Imports -->
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+       <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:capacity_plan" size="small"/>
+            {! v.title }
+        </aura:set>
+            
+          </lightning:card>
+ <div class="slds-form_horizontal slds-form slds-grid slds-wrap">
+            
+            <lightning:input aura:id="hitos" class="slds-size_1-of-4" type="text"  Name="numerohitos" label="Nº" required="true"/>
+         
+            <span> <lightning:button variant="brand" label="Update" title="Brand action" onclick="{!c.setData }" /></span> 
+        </div> 
+    
+    
+    <aura:if isTrue="{!v.showTable}">
+    <!-- the container element determine the height of the datatable -->
+    <div style="height: 300px">
+        <lightning:datatable
+            columns="{! v.columns }"
+            data="{! v.data }"
+            keyField="indice"
+            errors="{! v.errors }"
+            draftValues="{! v.draftValues }"
+            onsave="{! c.save }"
+           hideCheckboxColumn ="true"
+           onrowaction="{! c.handleRowAction }"
+                             
+          oncellchange="{! c.handleEditCellChange}"
+        />
+    </div>
+       </aura:if>
+</aura:component>

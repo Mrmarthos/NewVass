@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ingresos_Reales_Convertidos__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( $User.Divisa__c = TEXT( CurrencyIsoCode ) , Ingresos_Reales__c ,
+if( TEXT(CurrencyIsoCode )=&apos;GBP&apos; ,(Ingresos_Reales__c  /0.8478),
+if( TEXT(CurrencyIsoCode )=&apos;MXN&apos; ,(Ingresos_Reales__c  /26.276),
+if( TEXT(CurrencyIsoCode )=&apos;COP&apos; ,(Ingresos_Reales__c  /4310.550), 
+if( TEXT(CurrencyIsoCode )=&apos;CLP&apos; ,(Ingresos_Reales__c  /926.679), 
+if( TEXT(CurrencyIsoCode )=&apos;PEN&apos; ,(Ingresos_Reales__c  /4.513824347256766), 
+
+(Ingresos_Reales__c / 1
+
+
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ingresos_Reales_Convertidos</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

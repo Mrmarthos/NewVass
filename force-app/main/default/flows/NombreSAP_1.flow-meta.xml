@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Actualizar_LOB_seg_n_Gerencia_Acci_n_1</name>
+        <label>Actualizar LOB según Gerencia Acción 1</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <actionName>LOBCalculation</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>myRule_10</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>lineaDeProyectoId</name>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>LOBCalculation</nameSegment>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <decisions>
+        <name>myRule_10</name>
+        <label>Es principal</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>myRule_13</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Es principal</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_10</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Linea_principal__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Linea_principal__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Gerencia__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_10_A1</targetReference>
+            </connector>
+            <label>TRUE_Es principal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_13</name>
+        <label>Esintercompany</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <defaultConnector>
+            <targetReference>myRule_20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Esintercompany</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EsIntercompany__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EsIntercompany__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>TRUE_Esintercompany</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_20</name>
+        <label>Est4s</label>
+        <locationX>182</locationX>
+        <locationY>1139</locationY>
+        <defaultConnector>
+            <targetReference>myRule_32</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Est4s</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_20</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sede__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1410</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_20_A1</targetReference>
+            </connector>
+            <label>TRUE_Est4s</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_32</name>
+        <label>Esll</label>
+        <locationX>182</locationX>
+        <locationY>1439</locationY>
+        <defaultConnector>
+            <targetReference>myRule_39</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Esll</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_32</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Nombre_Tipo_Registro__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Llave en Mano</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Oportunidad__r.TieneLinea__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_32_A1</targetReference>
+            </connector>
+            <label>TRUE_Esll</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_39</name>
+        <label>Licencias Actu</label>
+        <locationX>182</locationX>
+        <locationY>1739</locationY>
+        <defaultConnectorLabel>FALSE_Licencias Actu</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_39</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Agrupacion_Tipo_Registro__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Licencias</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Importe_a_elevar__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_39_A1</targetReference>
+            </connector>
+            <label>TRUE_Licencias Actu</label>
+        </rules>
+    </decisions>
+    <description>Migrated from the NombreSAP process using multiple criteria.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_1_myRule_1_A1_7814292356</name>
+        <dataType>String</dataType>
+        <expression>LEFT(TRIM(
+if(AND({!$Record.EsIntercompany__c==true},ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),&quot;NA-V-&quot;,
+ if(OR(ISPICKVAL({!$Record.Sede__c}, &apos;1120&apos;),ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),&quot;NA-&quot;, 
+ if(AND({!$Record.EsIntercompany__c==true},ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),&quot;SB-V&quot;,
+  if(ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),&quot;SB-&quot;,
+  if(ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),&apos;CH-&apos;,IF(ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),&apos;T4S-&apos;,&apos;ES-&apos;))))))+ 
+   IF(ISNULL({!$Record.Oportunidad__c.Account.Name}), &apos;--&apos;, LEFT(TRIM({!$Record.Oportunidad__c.Account.Name} ) , 11))  + &quot;-&quot; + {!$Record.Area_Corta__c} +&quot;-&quot;+  RIGHT({!$Record.Oportunidad__c.Codigo_de_oportunidad__c}, 4)  +&quot;-&quot;  +  LEFT({!$Record.Oportunidad__c.Name}, 11)), 40)</expression>
+    </formulas>
+    <formulas>
+        <name>formula_2_myRule_1_A1_1706943197</name>
+        <dataType>String</dataType>
+        <expression>LEFT(TRIM(
+if(AND({!$Record.EsIntercompany__c==true},ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),&quot;NA-V-&quot;,
+ if(ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;),&quot;NA-&quot;, 
+ if(AND({!$Record.EsIntercompany__c==true},ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),&quot;SB-V&quot;,
+  if(ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),&quot;SB-&quot;,
+  if(ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),&apos;CH-&apos;,IF(ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),&apos;T4S-&apos;,&apos;ES-&apos;))))))+ 
+
+   IF(ISNULL({!$Record.Oportunidad__c.Account.Name}), &apos;--&apos;, LEFT(TRIM({!$Record.Oportunidad__c.Account.Name} ) , 11))  +&quot;-&quot; +&quot;PS&quot; + &quot;-&quot; + {!$Record.Area_Corta__c} +&quot;-&quot;+  RIGHT({!$Record.Oportunidad__c.Codigo_de_oportunidad__c}, 4)  +&quot;-&quot;  +  LEFT({!$Record.Oportunidad__c.Name}, 11)), 40)</expression>
+    </formulas>
+    <formulas>
+        <name>formula_3_myRule_39_A1_8132816944</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.Coste_a_Elevar_Licencias__c}</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <name>formula_4_myRule_39_A1_9442429455</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.Importe_a_elevar__c}</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <name>lob</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+{!$Record.Gerencia__c},
+    &quot;Integration &amp; Processes&quot;, &quot;Other&quot;,
+    &quot;Intelligent Technology&quot;, &quot;SAP&quot;,
+    &quot;Cloud Nine&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Governance &amp; Infrastructure&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Regulatory &amp; Data&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Customer Centric&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Digital Experience&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Delivery Cross&quot;, &quot;Other&quot;,
+    &quot;Comunytek&quot;, &quot;Other&quot;,
+    &quot;Tailor-Made Solutions&quot;, &quot;Other&quot;,
+    &quot;Staffing &amp; Hiring (MX)&quot;, &quot;Other&quot;,
+    &quot;SAP CX&quot;, &quot;SAP&quot;,
+    &quot;S/4&quot;, &quot;SAP&quot;,
+    &quot;One Inside&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Innovación (BV)&quot;, &quot;Other&quot;,
+    &quot;Customer Experience&quot;, &quot;SAP&quot;,
+    &quot;Intelligent Enterprise&quot;, &quot;SAP&quot;,
+    &quot;Nateevo&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Lobvalues</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  CONTAINS(TEXT({!$Record.Gerencia__c}), &quot;Nateevo&quot;),
+  &quot;03&quot;,
+  CASE(
+    {!$Record.Gerencia__c},
+    &quot;Integration &amp; Processes&quot;, &quot;04&quot;, /* Other */
+    &quot;Intelligent Technology&quot;, &quot;05&quot;, /* SAP */
+    &quot;Cloud Nine&quot;, &quot;01&quot;, /* AI, DATA &amp; Cloud */
+    &quot;Governance &amp; Infrastructure&quot;, &quot;01&quot;, /* AI, DATA &amp; Cloud */
+    &quot;Regulatory &amp; Data&quot;, &quot;01&quot;, /* AI, DATA &amp; Cloud */
+    &quot;Customer Centric&quot;, &quot;02&quot;, /* Digital Customer Experience */
+    &quot;Digital Experience&quot;, &quot;02&quot;, /* Digital Customer Experience */
+    &quot;Delivery Cross&quot;, &quot;04&quot;, /* Other */
+    &quot;Comunytek&quot;, &quot;04&quot;, /* Other */
+    &quot;Tailor-Made Solutions&quot;, &quot;04&quot;, /* Other */
+    &quot;Staffing &amp; Hiring (MX)&quot;, &quot;04&quot;, /* Other */
+    &quot;SAP CX&quot;, &quot;05&quot;, /* SAP */
+    &quot;S/4&quot;, &quot;05&quot;, /* SAP */
+    &quot;One Inside&quot;, &quot;02&quot;, /* Digital Customer Experience */
+    &quot;Innovación (BV)&quot;, &quot;04&quot;, /* Other */
+    &quot;Customer Experience&quot;, &quot;05&quot;, /* SAP */
+    &quot;Intelligent Enterprise&quot;, &quot;05&quot;, /* SAP */
+    &quot;Nateevo&quot;, &quot;03&quot;, /* Nateevo */
+    &quot;04&quot; /* Valor por defecto: Other */
+  )
+)</expression>
+    </formulas>
+    <label>NombreSAP_1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>LobLp</name>
+        <label>LobLp</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Actualizar_LOB_seg_n_Gerencia_Acci_n_1</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>LOB__c</field>
+            <value>
+                <elementReference>Lobvalues</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_10_A1</name>
+        <label>Actuliza Opor</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>myRule_13</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Clan_Principal__c</field>
+            <value>
+                <elementReference>$Record.Gerencia__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Oportunidad__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_13_A1</name>
+        <label>Inter</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <connector>
+            <targetReference>myRule_20</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intercompany__c</field>
+            <value>
+                <elementReference>$Record.EsIntercompany__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_20_A1</name>
+        <label>t4S</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <connector>
+            <targetReference>myRule_32</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EsdeT4S__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Oportunidad__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_32_A1</name>
+        <label>LL</label>
+        <locationX>50</locationX>
+        <locationY>1547</locationY>
+        <connector>
+            <targetReference>myRule_39</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>TieneLinea__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Oportunidad__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_39_A1</name>
+        <label>Update</label>
+        <locationX>50</locationX>
+        <locationY>1847</locationY>
+        <inputAssignments>
+            <field>Coste_Bruto__c</field>
+            <value>
+                <elementReference>formula_3_myRule_39_A1_8132816944</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Margen_real__c</field>
+            <value>
+                <elementReference>$Record.Margen_de_licencias__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Precio_Venta__c</field>
+            <value>
+                <elementReference>formula_4_myRule_39_A1_9442429455</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>LobLp</targetReference>
+        </connector>
+        <object>Linea_de_Proyecto__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

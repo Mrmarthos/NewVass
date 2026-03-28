@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_name_code_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>RIGHT(Execution_SAP_Name__c,( LEN(Execution_SAP_Name__c) -(FIND(&apos;-&apos; , Execution_SAP_Name__c,12)-1)))</formula>
+    <label>SAP name code 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

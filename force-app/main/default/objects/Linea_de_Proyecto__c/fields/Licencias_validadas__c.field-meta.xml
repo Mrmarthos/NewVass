@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licencias_validadas__c</fullName>
+    <externalId>false</externalId>
+    <formula>Licencias_activas__c = Contador_Licencias_validadas__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Checked if the amount of active licenses is the same as the number of valid licenses to be changed to &quot;Presented&quot; stage and for their synrcronization with SAP after.</inlineHelpText>
+    <label>Licencias validadas</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Semana__c</fullName>
+    <externalId>false</externalId>
+    <formula>&apos;Del--- &apos; + TEXT(DAY(Fecha_7__c))+ TEXT(MONTH( Fecha_7__c ))+&quot;/&quot; +&quot;/&quot; +TEXT(YEAR(Fecha_7__c))  + &apos;al&apos;  +TEXT((CreatedDate -1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Semana</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

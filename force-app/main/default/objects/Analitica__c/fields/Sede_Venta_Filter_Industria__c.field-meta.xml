@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sede_Venta_Filter_Industria__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Sede_Venta__r.Name==&apos;VASS Madrid&apos;, &apos;VASS Madrid España Indus&apos;,
+IF( Sede_Venta__r.Name==&apos;VASS Barcelona&apos;,&apos;VASS Barcelona &apos;,
+IF( Sede_Venta__r.Name==&apos;VASS Galicia&apos;,&apos;VASS Galicia España Indus&apos;,
+IF( Sede_Venta__r.Name==&apos;VASS CONSULTORÍA DE SISTEMAS PERÚ SAC&apos;,&apos;VASS Perú Latam&apos;,
+IF(Sede_Venta__r.Name==&apos;VASS CONSULTORIA DE SISTEMAS CHILE LIMITADA&apos;,&apos;VASS Chile Latam&apos;,
+IF(or(Sede_Venta__r.Name==&apos;VASS CONSULTORIA DE SISTEMAS COLOMBIA SAS&apos;,Sede_Venta__r.Name==&apos;VASS CONSULTORÍA DE SISTEMAS SL SUCURSAL COLOMBIA&apos;),&apos;VASS Colombia Latam&apos;,
+IF(Sede_Venta__r.Name==&apos;VASS CONSULTORÍA DE SISTEMAS MEXICO SA DE CV&apos;,&apos;VASS México Latam&apos;,
+IF(Sede_Venta__r.Name==&apos;NATEEVO DIGITAL SLU&apos;,&apos;Nateevo España&apos;,
+IF(Sede_Venta__r.Name==&apos;SERBATIC SISTEMAS TECNOLÓGICOS, S.A&apos;,&apos;Serbatic España&apos;,
+IF(Sede_Venta__r.Name==&apos;VASS NEDERLAND B.V&apos;,&apos;S VASS BENELUX EMEA&apos;,
+IF(Sede_Venta__r.Name==&apos;VASS IT Services Ltd&apos;,&apos;VASS UK EMEA&apos;,&apos;null&apos;)))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sede Venta Filter Industria</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

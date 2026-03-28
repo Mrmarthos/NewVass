@@ -1,0 +1,111 @@
+<aura:component controller="CSVCreatorRatecard" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    
+    
+    <aura:attribute name="csvObject" type="CSVObject"/>
+    <aura:attribute name="csvString" type="String"/>
+    <aura:attribute name="Fichero" type="Object"/>
+    <aura:attribute name="toggleSpinner" type="boolean" default="false"/> 
+    <aura:attribute name="toggleSpinner2" type="boolean" default="false"/> 
+    
+    <aura:handler name="change" value="v.csvString" action="{!c.handleGetCSV}"/>
+    <c:toast />
+    
+          <aura:if isTrue="{!v.toggleSpinner2}">
+
+                            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative .slds-spinner_container" role="alert">
+                            <span class="slds-assistive-text">Loading</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                  
+                    </aura:if> 
+    
+    <div class="slds-box slds-theme_shade">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-text-color_inverse" style="padding:0.5rem;background:#16325c">
+                        <span>Please Uplad CSV File separated by","</span>
+                    </h2>
+                </div>
+                
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            
+            <input title="Select a file" type="file" class="file" aura:id="file"  accept=".csv" onchange="{!c.handleUploadFinished}"/>
+            
+       
+               <lightning:button variant="Neutral" label="Clear" title="Clean"  onclick="{! c.cleanData }"/>
+            <aura:if isTrue="{!not(empty(v.csvObject))}">
+                <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                    
+                    <aura:if isTrue="{!v.toggleSpinner}">
+                        <div class="slds-spinner_container">
+                            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                <span class="slds-assistive-text">Loading</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </aura:if> 
+                    <div class="slds-modal__container">
+                        <header class="slds-modal__header">
+                            
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                                
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Data</h2>
+                        </header>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            
+                            <div class="slds-p-top_large"></div>
+                            <div class="slds-scrollable_x" >
+                                <table class="slds-is-sortable slds-is-resizable slds-text-title--caps slds-table slds-table_cell-buffer slds-table_bordered  slds-no-row-hover slds-table_bordered slds-table_col-bordered">
+                                    
+                                    <thead>
+                                        <tr>
+                                            <aura:iteration items="{!v.csvObject.headers}" var="header">
+                                                <th>{!header.column_name}</th>
+                                            </aura:iteration>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_body">
+                                        <aura:iteration items="{!v.csvObject.lines}" var="line">
+                                            <tr>
+                                                <aura:iteration items="{!line}" var="cell">
+                                                    <td>{!cell}</td>
+                                                </aura:iteration>
+                                            </tr>
+                                        </aura:iteration>
+                                    </tbody>
+                                </table>
+                                <div class="slds-p-top_medium">
+                                    <lightning:input name="comentarios" aura:id="comments" label="commentary(Opcional)" />
+                                </div>
+                                <div class="slds-p-top_medium"></div>
+                                
+                            </div>   
+                            
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <button class="slds-button slds-button_success" onclick="{!c.carga}">Update economic info</button>
+                            <button class="slds-button slds-button_destructive" onclick="{!c.cleanData}">Cancel</button>
+                            
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+                
+                
+                
+                
+            </aura:if>
+            
+        </div>
+    </div>
+    
+    
+    
+</aura:component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margen_de_venta__c</fullName>
+    <description>Cálculo del margen en base al precio y al coste</description>
+    <externalId>false</externalId>
+    <formula>if( Importe_de_licencias__c &gt;0,Margen_de_licencias__c,((Importe_total_2__c - Coste_estimado__c) / Importe_total_2__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Margen de venta</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

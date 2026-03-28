@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GTM_Assigned</fullName>
+    <columns>NAME</columns>
+    <columns>GTMLeader__c</columns>
+    <columns>RelatedOpportunity__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>GTMLeader__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>CreatedBySede__c</field>
+        <operation>equals</operation>
+        <value>VASS Madrid,VASS Barcelona,VASS Galicia,Serbatic,Nateevo España</value>
+    </filters>
+    <label>GTM Assigned España</label>
+</ListView>

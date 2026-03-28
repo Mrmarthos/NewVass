@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsable_de_SW</fullName>
+    <active>false</active>
+    <errorConditionFormula>Responsable_de_LDP__r.Profile.Id != &apos;00e0N000000i4Ke&apos; &amp;&amp; RecordType.DeveloperName = &apos;Licencias&apos; &amp;&amp; NOT(ISBLANK(Responsable_de_LDP__c)) &amp;&amp;  $Profile.Id != &apos;00e0N0000019WkL&apos;</errorConditionFormula>
+    <errorDisplayField>Responsable_de_LDP__c</errorDisplayField>
+    <errorMessage>El Responsable de la oferta debe ser una persona del departamento de software</errorMessage>
+</ValidationRule>

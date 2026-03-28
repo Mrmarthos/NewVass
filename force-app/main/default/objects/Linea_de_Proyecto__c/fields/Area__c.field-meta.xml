@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Práctica</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Gerencia__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Areas</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Innovación (BV)</controllingFieldValue>
+            <valueName>ES00I00004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comunytek</controllingFieldValue>
+            <valueName>ES00T04004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Delivery Success</controllingFieldValue>
+            <valueName>NT00T04004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Delivery Success</controllingFieldValue>
+            <valueName>NT00T04010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Delivery Success</controllingFieldValue>
+            <valueName>NT00T04009</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sin Asignar</controllingFieldValue>
+            <valueName>Sin Asignar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Brand Services</controllingFieldValue>
+            <valueName>NT00T06001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Brand Services</controllingFieldValue>
+            <valueName>NT00T06004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Brand Services</controllingFieldValue>
+            <valueName>NT00T06003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Consulting</controllingFieldValue>
+            <valueName>NT00T02001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Consulting</controllingFieldValue>
+            <valueName>NT00T02002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Consulting</controllingFieldValue>
+            <valueName>NT00T02003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Smartech</controllingFieldValue>
+            <valueName>NT00T04001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Smartech</controllingFieldValue>
+            <controllingFieldValue>Nateevo - Media</controllingFieldValue>
+            <valueName>NT00T04002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Smartech</controllingFieldValue>
+            <valueName>NT00T04006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Smartech</controllingFieldValue>
+            <valueName>NT00T04007</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Experience</controllingFieldValue>
+            <valueName>NT00T03001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Experience</controllingFieldValue>
+            <valueName>NT00T03002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Experience</controllingFieldValue>
+            <valueName>NT00T03003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Experience</controllingFieldValue>
+            <valueName>TS00T02001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Data &amp; Analytics</controllingFieldValue>
+            <valueName>NT00T04005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Data &amp; Analytics</controllingFieldValue>
+            <valueName>NT00T09001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intelligent Technology</controllingFieldValue>
+            <valueName>TS00T05001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intelligent Technology</controllingFieldValue>
+            <valueName>TS00T05002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intelligent Technology</controllingFieldValue>
+            <valueName>TS00T05003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intelligent Technology</controllingFieldValue>
+            <valueName>TS00T05004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intelligent Technology</controllingFieldValue>
+            <valueName>TS00T05005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Media</controllingFieldValue>
+            <valueName>NT00T06002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Media</controllingFieldValue>
+            <valueName>NT00T04003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Media</controllingFieldValue>
+            <valueName>NT00T10001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Development</controllingFieldValue>
+            <valueName>NT00T05001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Development</controllingFieldValue>
+            <valueName>NT00T05002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo - Development</controllingFieldValue>
+            <valueName>NT00T05003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S/4</controllingFieldValue>
+            <valueName>TS00T04001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02007</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Experience</controllingFieldValue>
+            <valueName>ES00T02008</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tailor-Made Solutions</controllingFieldValue>
+            <valueName>ES00T03002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tailor-Made Solutions</controllingFieldValue>
+            <valueName>ES00T03003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tailor-Made Solutions</controllingFieldValue>
+            <valueName>ES00T03006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tailor-Made Solutions</controllingFieldValue>
+            <valueName>ES00T03009</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T04002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T040045</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T19004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T04008</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T19002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T19003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regulatory &amp; Data</controllingFieldValue>
+            <valueName>ES00T04009</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Governance &amp; Infrastructure</controllingFieldValue>
+            <valueName>ES00T05002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Governance &amp; Infrastructure</controllingFieldValue>
+            <valueName>ES00T05003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Governance &amp; Infrastructure</controllingFieldValue>
+            <valueName>ES00T05004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Centric</controllingFieldValue>
+            <valueName>ES00T08001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Centric</controllingFieldValue>
+            <valueName>ES00T04006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Centric</controllingFieldValue>
+            <valueName>ES00T17003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integration &amp; Processes</controllingFieldValue>
+            <valueName>ES00T03004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integration &amp; Processes</controllingFieldValue>
+            <valueName>ES00T03005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Cross</controllingFieldValue>
+            <valueName>ES00T07001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Cross</controllingFieldValue>
+            <valueName>ES00T16002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Cross</controllingFieldValue>
+            <valueName>ES00T16005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Cross</controllingFieldValue>
+            <valueName>ES00T16006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP CX</controllingFieldValue>
+            <valueName>ES00T23006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24007</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nateevo Inside VASS</controllingFieldValue>
+            <valueName>ES00T24002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T4S Inside VASS</controllingFieldValue>
+            <valueName>ES00T25002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T4S Inside VASS</controllingFieldValue>
+            <valueName>ES00T25003</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

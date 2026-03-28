@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsable_Marcado_Como_Gerente</fullName>
+    <active>false</active>
+    <errorConditionFormula>Responsable_de_LDP__r.Gerente__c=False &amp;&amp;   ISPICKVAL(Responsable_de_LDP__r.Sede__c ,&apos;1000&apos;)</errorConditionFormula>
+    <errorDisplayField>Responsable_de_SW__c</errorDisplayField>
+    <errorMessage>La persona debe estar dada de alta como gerente en SAP</errorMessage>
+</ValidationRule>

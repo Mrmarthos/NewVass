@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probabilidad__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( Linea_de_Proyecto__c )),Linea_de_Proyecto__r.Oportunidad__r.Probability,
+IF(NOT(ISBLANK( Oportunidad__c)), Oportunidad__r.Probability,0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Probabilidad</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VASS_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>VASS Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Associate Consultant</fullName>
+                <default>false</default>
+                <label>Associate Consultant</label>
+            </value>
+            <value>
+                <fullName>Automation Tester Intermediate</fullName>
+                <default>false</default>
+                <label>Automation Tester Intermediate</label>
+            </value>
+            <value>
+                <fullName>Automation Tester Junior</fullName>
+                <default>false</default>
+                <label>Automation Tester Junior</label>
+            </value>
+            <value>
+                <fullName>Automation Tester Senior</fullName>
+                <default>false</default>
+                <label>Automation Tester Senior</label>
+            </value>
+            <value>
+                <fullName>Backend Intermediate Developer</fullName>
+                <default>false</default>
+                <label>Backend Intermediate Developer</label>
+            </value>
+            <value>
+                <fullName>Backend Junior Developer</fullName>
+                <default>false</default>
+                <label>Backend Junior Developer</label>
+            </value>
+            <value>
+                <fullName>Backend Senior Developer</fullName>
+                <default>false</default>
+                <label>Backend Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
+                <fullName>Business Analyst (French speaking part)</fullName>
+                <default>false</default>
+                <label>Business Analyst (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Business Analyst (German speaking part)</fullName>
+                <default>false</default>
+                <label>Business Analyst (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Business Analyst Intermediate</fullName>
+                <default>false</default>
+                <label>Business Analyst Intermediate</label>
+            </value>
+            <value>
+                <fullName>Business Analyst Junior</fullName>
+                <default>false</default>
+                <label>Business Analyst Junior</label>
+            </value>
+            <value>
+                <fullName>Business Analyst Senior</fullName>
+                <default>false</default>
+                <label>Business Analyst Senior</label>
+            </value>
+            <value>
+                <fullName>Business Process Specialist Intermediate</fullName>
+                <default>false</default>
+                <label>Business Process Specialist Intermediate</label>
+            </value>
+            <value>
+                <fullName>Business Process Specialist Junior</fullName>
+                <default>false</default>
+                <label>Business Process Specialist Junior</label>
+            </value>
+            <value>
+                <fullName>Business Process Specialist Senior</fullName>
+                <default>false</default>
+                <label>Business Process Specialist Senior</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Consultant (French speaking part)</fullName>
+                <default>false</default>
+                <label>Consultant (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Consultant (German speaking part)</fullName>
+                <default>false</default>
+                <label>Consultant (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Data Scientist Intermediate</fullName>
+                <default>false</default>
+                <label>Data Scientist Intermediate</label>
+            </value>
+            <value>
+                <fullName>Data Scientist Junior</fullName>
+                <default>false</default>
+                <label>Data Scientist Junior</label>
+            </value>
+            <value>
+                <fullName>Data Scientist Senior</fullName>
+                <default>false</default>
+                <label>Data Scientist Senior</label>
+            </value>
+            <value>
+                <fullName>Delivery Analyst</fullName>
+                <default>false</default>
+                <label>Delivery Analyst</label>
+            </value>
+            <value>
+                <fullName>Delivery Consultant</fullName>
+                <default>false</default>
+                <label>Delivery Consultant</label>
+            </value>
+            <value>
+                <fullName>Delivery Manager</fullName>
+                <default>false</default>
+                <label>Delivery Manager</label>
+            </value>
+            <value>
+                <fullName>Designer (French speaking part)</fullName>
+                <default>false</default>
+                <label>Designer (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Designer (German speaking part)</fullName>
+                <default>false</default>
+                <label>Designer (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Designer Nearshore (N. Macedonia)</fullName>
+                <default>false</default>
+                <label>Designer Nearshore (N. Macedonia)</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Developer (H)</fullName>
+                <default>false</default>
+                <label>Developer (H)</label>
+            </value>
+            <value>
+                <fullName>Developer (L,O)</fullName>
+                <default>false</default>
+                <label>Developer (L,O)</label>
+            </value>
+            <value>
+                <fullName>Developer (L,R)</fullName>
+                <default>false</default>
+                <label>Developer (L,R)</label>
+            </value>
+            <value>
+                <fullName>DevSecOps Intermediate</fullName>
+                <default>false</default>
+                <label>DevSecOps Intermediate</label>
+            </value>
+            <value>
+                <fullName>DevSecOps Junior</fullName>
+                <default>false</default>
+                <label>DevSecOps Junior</label>
+            </value>
+            <value>
+                <fullName>DevSecOps Senior</fullName>
+                <default>false</default>
+                <label>DevSecOps Senior</label>
+            </value>
+            <value>
+                <fullName>EDX - Connection Program resources</fullName>
+                <default>false</default>
+                <label>EDX - Connection Program resources</label>
+            </value>
+            <value>
+                <fullName>EDX - Director of MarTech Architect (Technical)</fullName>
+                <default>false</default>
+                <label>EDX - Director of MarTech Architect (Technical)</label>
+            </value>
+            <value>
+                <fullName>EDX - Jr. Marketing Automation Consultant (Technical &amp; Functional)</fullName>
+                <default>false</default>
+                <label>EDX - Jr. Marketing Automation Consultant (Technical &amp; Functional)</label>
+            </value>
+            <value>
+                <fullName>EDX - Jr Strategist / Change Mgmt.</fullName>
+                <default>false</default>
+                <label>EDX - Jr Strategist / Change Mgmt.</label>
+            </value>
+            <value>
+                <fullName>EDX - Marketing Specialist</fullName>
+                <default>false</default>
+                <label>EDX - Marketing Specialist</label>
+            </value>
+            <value>
+                <fullName>EDX - Sr. Marketing Automation Consultant - (Technical &amp; Functional)</fullName>
+                <default>false</default>
+                <label>EDX - Sr. Marketing Automation Consultant - (Technical &amp; Functional)</label>
+            </value>
+            <value>
+                <fullName>EDX - Sr Director</fullName>
+                <default>false</default>
+                <label>EDX - Sr Director</label>
+            </value>
+            <value>
+                <fullName>EDX - Sr Director (BT and Marketing &amp; Commerce)</fullName>
+                <default>false</default>
+                <label>EDX - Sr Director (BT and Marketing &amp; Commerce)</label>
+            </value>
+            <value>
+                <fullName>EDX - Sr Strategist / Change Mgmt.</fullName>
+                <default>false</default>
+                <label>EDX - Sr Strategist / Change Mgmt.</label>
+            </value>
+            <value>
+                <fullName>EDX - VP</fullName>
+                <default>false</default>
+                <label>EDX - VP</label>
+            </value>
+            <value>
+                <fullName>Frontend Intermediate Developer</fullName>
+                <default>false</default>
+                <label>Frontend Intermediate Developer</label>
+            </value>
+            <value>
+                <fullName>Frontend Junior Developer</fullName>
+                <default>false</default>
+                <label>Frontend Junior Developer</label>
+            </value>
+            <value>
+                <fullName>Frontend Senior Developer</fullName>
+                <default>false</default>
+                <label>Frontend Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Full Stack Intermediate Developer</fullName>
+                <default>false</default>
+                <label>Full Stack Intermediate Developer</label>
+            </value>
+            <value>
+                <fullName>Full Stack Junior Developer</fullName>
+                <default>false</default>
+                <label>Full Stack Junior Developer</label>
+            </value>
+            <value>
+                <fullName>Full Stack Senior Developer</fullName>
+                <default>false</default>
+                <label>Full Stack Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Infrastructure Manager</fullName>
+                <default>false</default>
+                <label>Infrastructure Manager</label>
+            </value>
+            <value>
+                <fullName>Intermediate Change-, program-, project mngr</fullName>
+                <default>false</default>
+                <label>Intermediate Change-, program-, project mngr</label>
+            </value>
+            <value>
+                <fullName>Intermediate Developer, Applicationspecialist</fullName>
+                <default>false</default>
+                <label>Intermediate Developer, Applicationspecialist</label>
+            </value>
+            <value>
+                <fullName>Intermediate Developer (H)</fullName>
+                <default>false</default>
+                <label>Intermediate Developer (H)</label>
+            </value>
+            <value>
+                <fullName>Intermediate Developer (L)</fullName>
+                <default>false</default>
+                <label>Intermediate Developer (L)</label>
+            </value>
+            <value>
+                <fullName>Intermediate Dev FE/BE/Fullstack, Architect</fullName>
+                <default>false</default>
+                <label>Intermediate Dev FE/BE/Fullstack, Architect</label>
+            </value>
+            <value>
+                <fullName>Intermediate Scrum master, product owner, Coach</fullName>
+                <default>false</default>
+                <label>Intermediate Scrum master, product owner, Coach</label>
+            </value>
+            <value>
+                <fullName>Intermediate Test mngr, Test automation</fullName>
+                <default>false</default>
+                <label>Intermediate Test mngr, Test automation</label>
+            </value>
+            <value>
+                <fullName>Intermediate Writer, UX/UI designer, Service designer</fullName>
+                <default>false</default>
+                <label>Intermediate Writer, UX/UI designer, Service designer</label>
+            </value>
+            <value>
+                <fullName>Junior Developer (H)</fullName>
+                <default>false</default>
+                <label>Junior Developer (H)</label>
+            </value>
+            <value>
+                <fullName>Junior Developer (L)</fullName>
+                <default>false</default>
+                <label>Junior Developer (L)</label>
+            </value>
+            <value>
+                <fullName>Junior Infrastructure Engineer</fullName>
+                <default>false</default>
+                <label>Junior Infrastructure Engineer</label>
+            </value>
+            <value>
+                <fullName>Junior PM</fullName>
+                <default>false</default>
+                <label>Junior PM</label>
+            </value>
+            <value>
+                <fullName>Junior Project Manager</fullName>
+                <default>false</default>
+                <label>Junior Project Manager</label>
+            </value>
+            <value>
+                <fullName>Lead Consultant</fullName>
+                <default>false</default>
+                <label>Lead Consultant</label>
+            </value>
+            <value>
+                <fullName>Mobile Intermediate Developer</fullName>
+                <default>false</default>
+                <label>Mobile Intermediate Developer</label>
+            </value>
+            <value>
+                <fullName>Mobile Junior Developer</fullName>
+                <default>false</default>
+                <label>Mobile Junior Developer</label>
+            </value>
+            <value>
+                <fullName>Mobile Senior Developer</fullName>
+                <default>false</default>
+                <label>Mobile Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Network Engineer Intermediate</fullName>
+                <default>false</default>
+                <label>Network Engineer Intermediate</label>
+            </value>
+            <value>
+                <fullName>Network Engineer Junior</fullName>
+                <default>false</default>
+                <label>Network Engineer Junior</label>
+            </value>
+            <value>
+                <fullName>Network Engineer Senior</fullName>
+                <default>false</default>
+                <label>Network Engineer Senior</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Principal Consultant</fullName>
+                <default>false</default>
+                <label>Principal Consultant</label>
+            </value>
+            <value>
+                <fullName>Program Manager Intermediate</fullName>
+                <default>false</default>
+                <label>Program Manager Intermediate</label>
+            </value>
+            <value>
+                <fullName>Program Manager Junior</fullName>
+                <default>false</default>
+                <label>Program Manager Junior</label>
+            </value>
+            <value>
+                <fullName>Program Manager Senior</fullName>
+                <default>false</default>
+                <label>Program Manager Senior</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Project Manager (French speaking part)</fullName>
+                <default>false</default>
+                <label>Project Manager (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Project Manager (German speaking part)</fullName>
+                <default>false</default>
+                <label>Project Manager (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Project Manager Intermediate</fullName>
+                <default>false</default>
+                <label>Project Manager Intermediate</label>
+            </value>
+            <value>
+                <fullName>Project Manager Junior</fullName>
+                <default>false</default>
+                <label>Project Manager Junior</label>
+            </value>
+            <value>
+                <fullName>Project Manager Senior</fullName>
+                <default>false</default>
+                <label>Project Manager Senior</label>
+            </value>
+            <value>
+                <fullName>QA Engineer</fullName>
+                <default>false</default>
+                <label>QA Engineer</label>
+            </value>
+            <value>
+                <fullName>QA Nearshore (N. Macedonia)</fullName>
+                <default>false</default>
+                <label>QA Nearshore (N. Macedonia)</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Analyst</fullName>
+                <default>false</default>
+                <label>Quality Assurance Analyst</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Intermediate</fullName>
+                <default>false</default>
+                <label>Quality Assurance Intermediate</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Junior</fullName>
+                <default>false</default>
+                <label>Quality Assurance Junior</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Manager</fullName>
+                <default>false</default>
+                <label>Quality Assurance Manager</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Senior</fullName>
+                <default>false</default>
+                <label>Quality Assurance Senior</label>
+            </value>
+            <value>
+                <fullName>Regular Consultant</fullName>
+                <default>false</default>
+                <label>Regular Consultant</label>
+            </value>
+            <value>
+                <fullName>Security Specialist Intermediate</fullName>
+                <default>false</default>
+                <label>Security Specialist Intermediate</label>
+            </value>
+            <value>
+                <fullName>Security Specialist Junior</fullName>
+                <default>false</default>
+                <label>Security Specialist Junior</label>
+            </value>
+            <value>
+                <fullName>Security Specialist Senior</fullName>
+                <default>false</default>
+                <label>Security Specialist Senior</label>
+            </value>
+            <value>
+                <fullName>Senior Business Analyst</fullName>
+                <default>false</default>
+                <label>Senior Business Analyst</label>
+            </value>
+            <value>
+                <fullName>Senior Change-, program-, project mngr</fullName>
+                <default>false</default>
+                <label>Senior Change-, program-, project mngr</label>
+            </value>
+            <value>
+                <fullName>Senior Consultant</fullName>
+                <default>false</default>
+                <label>Senior Consultant</label>
+            </value>
+            <value>
+                <fullName>Senior Delivery Manager</fullName>
+                <default>false</default>
+                <label>Senior Delivery Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Developer</fullName>
+                <default>false</default>
+                <label>Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Senior Developer, Applicationspecialist</fullName>
+                <default>false</default>
+                <label>Senior Developer, Applicationspecialist</label>
+            </value>
+            <value>
+                <fullName>Senior Developer (H)</fullName>
+                <default>false</default>
+                <label>Senior Developer (H)</label>
+            </value>
+            <value>
+                <fullName>Senior Developer (L,O)</fullName>
+                <default>false</default>
+                <label>Senior Developer (L,O)</label>
+            </value>
+            <value>
+                <fullName>Senior Developer (L,R)</fullName>
+                <default>false</default>
+                <label>Senior Developer (L,R)</label>
+            </value>
+            <value>
+                <fullName>Senior Developer (L)</fullName>
+                <default>false</default>
+                <label>Senior Developer (L)</label>
+            </value>
+            <value>
+                <fullName>Senior Dev FE/BE/Fullstack, Architect</fullName>
+                <default>false</default>
+                <label>Senior Dev FE/BE/Fullstack, Architect</label>
+            </value>
+            <value>
+                <fullName>Senior Infrastructure Engineer</fullName>
+                <default>false</default>
+                <label>Senior Infrastructure Engineer</label>
+            </value>
+            <value>
+                <fullName>Senior PM</fullName>
+                <default>false</default>
+                <label>Senior PM</label>
+            </value>
+            <value>
+                <fullName>Senior Project Manager</fullName>
+                <default>false</default>
+                <label>Senior Project Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Scrum master, product owner, Coach</fullName>
+                <default>false</default>
+                <label>Senior Scrum master, product owner, Coach</label>
+            </value>
+            <value>
+                <fullName>Senior Test mngr, Test automation</fullName>
+                <default>false</default>
+                <label>Senior Test mngr, Test automation</label>
+            </value>
+            <value>
+                <fullName>Senior Writer, UX/UI designer, Service designer</fullName>
+                <default>false</default>
+                <label>Senior Writer, UX/UI designer, Service designer</label>
+            </value>
+            <value>
+                <fullName>Software Architect (French speaking part)</fullName>
+                <default>false</default>
+                <label>Software Architect (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Software Architect (German speaking part)</fullName>
+                <default>false</default>
+                <label>Software Architect (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Software Engineer (French speaking part)</fullName>
+                <default>false</default>
+                <label>Software Engineer (French speaking part)</label>
+            </value>
+            <value>
+                <fullName>Software Engineer (German speaking part)</fullName>
+                <default>false</default>
+                <label>Software Engineer (German speaking part)</label>
+            </value>
+            <value>
+                <fullName>Software Engineer Nearshore (N. Macedonia)</fullName>
+                <default>false</default>
+                <label>Software Engineer Nearshore (N. Macedonia)</label>
+            </value>
+            <value>
+                <fullName>Solution Architect</fullName>
+                <default>false</default>
+                <label>Solution Architect</label>
+            </value>
+            <value>
+                <fullName>System Engineer / Infrastructure Specialist Intermediate</fullName>
+                <default>false</default>
+                <label>System Engineer / Infrastructure Specialist Intermediate</label>
+            </value>
+            <value>
+                <fullName>System Engineer / Infrastructure Specialist Junior</fullName>
+                <default>false</default>
+                <label>System Engineer / Infrastructure Specialist Junior</label>
+            </value>
+            <value>
+                <fullName>System Engineer / Infrastructure Specialist Senior</fullName>
+                <default>false</default>
+                <label>System Engineer / Infrastructure Specialist Senior</label>
+            </value>
+            <value>
+                <fullName>T4S - Business Analyst</fullName>
+                <default>false</default>
+                <label>T4S - Business Analyst</label>
+            </value>
+            <value>
+                <fullName>T4S - Developer (L)</fullName>
+                <default>false</default>
+                <label>T4S - Developer (L)</label>
+            </value>
+            <value>
+                <fullName>T4S - Senior Business Analyst</fullName>
+                <default>false</default>
+                <label>T4S - Senior Business Analyst</label>
+            </value>
+            <value>
+                <fullName>T4S - Senior Developer (L)</fullName>
+                <default>false</default>
+                <label>T4S - Senior Developer (L)</label>
+            </value>
+            <value>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+                <label>Technical Lead</label>
+            </value>
+            <value>
+                <fullName>Technical Lead / Architect Intermediate</fullName>
+                <default>false</default>
+                <label>Technical Lead / Architect Intermediate</label>
+            </value>
+            <value>
+                <fullName>Technical Lead / Architect Junior</fullName>
+                <default>false</default>
+                <label>Technical Lead / Architect Junior</label>
+            </value>
+            <value>
+                <fullName>Technical Lead / Architect Senior</fullName>
+                <default>false</default>
+                <label>Technical Lead / Architect Senior</label>
+            </value>
+            <value>
+                <fullName>Test Automation</fullName>
+                <default>false</default>
+                <label>Test Automation</label>
+            </value>
+            <value>
+                <fullName>UI/UX Intermediate</fullName>
+                <default>false</default>
+                <label>UI/UX Intermediate</label>
+            </value>
+            <value>
+                <fullName>UI/UX Junior</fullName>
+                <default>false</default>
+                <label>UI/UX Junior</label>
+            </value>
+            <value>
+                <fullName>UI/UX Senior</fullName>
+                <default>false</default>
+                <label>UI/UX Senior</label>
+            </value>
+            <value>
+                <fullName>Developer (L)</fullName>
+                <default>false</default>
+                <label>Developer (L)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

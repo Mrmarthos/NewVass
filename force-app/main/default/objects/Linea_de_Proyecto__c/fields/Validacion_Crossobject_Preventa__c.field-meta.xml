@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Crossobject_Preventa__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marcado cuando todos aquellos campos crossobject (usuarios) están validados para preventa. Esto evita el error a la hora de hacer rollups de campos formula</description>
+    <externalId>false</externalId>
+    <label>Validacion Crossobject Preventa</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

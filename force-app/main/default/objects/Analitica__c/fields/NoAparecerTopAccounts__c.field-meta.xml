@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoAparecerTopAccounts__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( AND( Agrupacion_Importes_TOP_Accountas__c==&apos;Cierre 2020&apos;,  Ingresos_Reales__c =0),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NoAparecerCierreTopAccounts</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

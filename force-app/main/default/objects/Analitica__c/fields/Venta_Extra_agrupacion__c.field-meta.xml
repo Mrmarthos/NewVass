@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Venta_Extra_agrupacion__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(Venta_Extra__c==TRUE, Linea_de_Proyecto__r.Venta_Extraordinaria__c==true, Oportunidad__r.Proyecto_extraordinario__c==true )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agrupacion Venta Extra</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

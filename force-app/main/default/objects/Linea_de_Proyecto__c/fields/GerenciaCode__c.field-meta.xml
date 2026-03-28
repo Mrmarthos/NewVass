@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GerenciaCode__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Gerencia__c,
+    &quot;Estructura&quot;, &quot;N000&quot;,
+    &quot;Comercial&quot;, &quot;N001&quot;,
+    &quot;Nateevo - Consulting&quot;, &quot;N002&quot;,
+    &quot;Nateevo - Experience&quot;, &quot;N003&quot;,
+    &quot;Nateevo - Smartech&quot;, &quot;N004&quot;,
+    &quot;Nateevo - Development&quot;, &quot;N005&quot;,
+    &quot;Nateevo - Brand Services&quot;, &quot;N006&quot;,
+    &quot;Nateevo-Business Value&quot;, &quot;N007&quot;,
+    &quot;Operaciones&quot;, &quot;N008&quot;,
+    &quot;Customer Centric&quot;, &quot;V017&quot;,
+    &quot;Digital Experience&quot;, &quot;V002&quot;,
+    &quot;Tailor-Made Solutions&quot;, &quot;V003&quot;,
+    &quot;Regulatory &amp; Data&quot;, &quot;V004&quot;,
+    &quot;Governance &amp; Infrastructure&quot;, &quot;V005&quot;,
+    &quot;No utilizar (Consultoría)&quot;, &quot;V006&quot;,
+    &quot;Talent Solutions&quot;, &quot;V007&quot;,
+    &quot;Operaciones&quot;, &quot;V009&quot;,
+    &quot;Innovación (BV)&quot;, &quot;V010&quot;,
+    &quot;Proyectos Internos&quot;, &quot;V011&quot;,
+    &quot;Comercial&quot;, &quot;V012&quot;,
+    &quot;Hybris&quot;, &quot;V013&quot;,
+    &quot;Integration &amp; Processes&quot;, &quot;V014&quot;,
+    &quot;Delivery Cross&quot;, &quot;V016&quot;,
+    &quot;Customer Centric&quot;, &quot;V017&quot;,
+    &quot;Business Consulting&quot;, &quot;V018&quot;,
+    &quot;Datamorphosys&quot;, &quot;V019&quot;,
+    &quot;Staffing (MX)&quot;, &quot;MX20&quot;,
+    &quot;Servicios Diversos (Serb)&quot;, &quot;S020&quot;,
+    &quot;Customer Experience&quot;, &quot;T002&quot;,
+    &quot;Intelligent Technology&quot;, &quot;T005&quot;,
+    &quot;S/4&quot;, &quot;T004&quot;,
+    &quot;Comunytek&quot;, &quot;V021&quot;,
+    &quot;Intelligent Enterprise&quot;, &quot;T001&quot;,
+    &quot;Cloud Nine&quot;, &quot;V022&quot;,
+    &quot;Nateevo - Delivery Success&quot;, &quot;N011&quot;,
+    &quot;Nateevo - Data &amp; Analytics&quot;, &quot;N009&quot;,
+    &quot;Nateevo - Media&quot;, &quot;N010&quot;,
+    &quot;SAP CX&quot;, &quot;V023&quot;,
+&quot;Nateevo Inside VASS&quot;,&quot;V024&quot;,
+	&quot;T4S Inside VASS&quot;,&quot;V025&quot;,
+    &quot;Sin Asignar&quot;, &quot;V000&quot;,  /* valor adicional si hay duplicados */
+    &quot;No definido&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GerenciaCode</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

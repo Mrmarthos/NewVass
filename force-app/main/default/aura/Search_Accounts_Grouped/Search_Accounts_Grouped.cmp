@@ -1,0 +1,90 @@
+<aura:component controller="AccountsGroupedController"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:attribute name="Group" type="String" />
+    <aura:attribute name="accounts" type="Account" />
+    <aura:attribute name="camposAcc" type="List" />
+    <aura:attribute name="allData" type="List" />
+    <aura:attribute name="idExterno" type="String" />
+    <aura:attribute name="isLoading" type="Boolean" default="false" />
+    <aura:attribute name="searchPhrase" type="String" />
+    <aura:attribute name="selectedRowsList" type="List" />
+    <aura:attribute name="maxRowSelection" type="Integer" default="1"/>
+    <aura:attribute name="Message" type="boolean" default=""/> 
+    <aura:attribute name="filteredData" type="List" />
+    <aura:attribute name="pageSize" type="Integer" default="4" />
+    <aura:attribute name="pageSizeOptions" type="Integer[]" default="10,15,20,25,50,100" />
+    <aura:attribute name="currentPageNumber" type="Integer" default="1" />
+    <aura:attribute name="totalPages" type="Integer" default="1" />
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }" />
+
+    <aura:if isTrue="{! v.isLoading }">
+        <lightning:spinner alternativeText="Loading" />
+    </aura:if>
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-size_2-of-3">
+            <div class="slds-box slds-theme_shade slds-m-top_small slds-p-left_xx-small slds-p-top_xx-small ">
+                <lightning:icon iconName="standard:search" alternativeText="Search" size="medium"/>
+                 &nbsp;
+                 <b>Search Group Accounts</b>
+            </div>
+        </div>
+    </div>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-size_2-of-3 slds-theme_default slds-m-top_x-small">
+            <div
+                class="  slds-m-top_x-small slds-p-left_x-small slds-p-top_x-small slds-m-left_small slds-m-right_small">
+                <lightning:input name="Group" label="Group" value="{!v.Group}" required="true"/>
+                <div class="slds-m-top_x-small slds-m-bottom_x-small ">
+                    <lightning:button variant="Neutral" name="Search" label="Search" onclick="{!c.showAccs}"
+                    class="boton" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hiddenTable slds-m-top_x-small" aura:id="hiddenTable">
+        <div class="slds-p-around_small slds-grid slds-gutters">
+                
+            <div class="slds-col">
+                <lightning:button
+                    
+                    label="Previous"
+                    iconName="utility:chevronleft"
+                    iconPosition="left"
+                    onclick="{! c.onPrev }"
+                    disabled="{! v.currentPageNumber == 1 }" />
+            </div>    
+                    <span class="slds-col slds-p-top_x-small slds-text-align_center">
+                                    Page {! (v.currentPageNumber) } of {! (v.totalPages) }
+                    </span>
+            <div class="slds-col">
+                <lightning:button
+                class="slds-float_right"
+                    label="Next"
+                    iconName="utility:chevronright"
+                    iconPosition="right"
+                    onclick="{! c.onNext }"
+                    disabled="{! v.currentPageNumber == v.totalPages }" />
+            </div>
+        </div>
+        <lightning:card>
+            <lightning:datatable 
+            data="{! v.accounts }" 
+            columns="{! v.camposAcc }" 
+            keyField="id"
+            onrowselection="{! c.updateSelectedText}" 
+            maxRowSelection="{! v.maxRowSelection }"
+            />
+            &nbsp;
+            <div class="slds-m-top_x-small slds-m-bottom_x-small ">
+            <lightning:button
+                        label="Add"
+                        onclick="{! c.aniadirId }"
+                        />
+            </div>
+        </lightning:card>
+    </div>
+</aura:component>

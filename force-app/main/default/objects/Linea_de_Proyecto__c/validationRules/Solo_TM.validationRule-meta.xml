@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solo_TM</fullName>
+    <active>true</active>
+    <errorConditionFormula>Oportunidad__r.RecordType.DeveloperName = &apos;TM&apos; &amp;&amp; RecordType.DeveloperName  &lt;&gt; &apos;TM&apos;</errorConditionFormula>
+    <errorMessage>No es posible añadir una línea de proyecto de un tipo diferente a T&amp;M en una oportunidad de tipo T&amp;M</errorMessage>
+</ValidationRule>

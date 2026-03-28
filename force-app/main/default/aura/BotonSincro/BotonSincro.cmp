@@ -1,0 +1,5 @@
+<aura:component   controller = "CallSAPSincro"  implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    
+	<lightning:button variant="brand" label="Synchronize" title="Base action" class="slds-m-left_x-small" onclick="{! c.myAction }"/>
+
+</aura:component>

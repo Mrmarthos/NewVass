@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula</name>
+        <dataType>String</dataType>
+        <expression>IF(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02002&quot;), &quot;DBP&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02003&quot;), &quot;ECO&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02004&quot;), &quot;ES&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02006&quot;), &quot;DIGS&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02007&quot;), &quot;PEP&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T02008&quot;), &quot;POP&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03002&quot;), &quot;MOB&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03003&quot;), &quot;J&amp;OS&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03006&quot;), &quot;MDS&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04002&quot;), &quot;DS&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04004&quot;), &quot;CM&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T19003&quot;), &quot;D&amp;A&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T05002&quot;), &quot;TEC&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T05003&quot;), &quot;SEC&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T05004&quot;), &quot;DEV&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T07001&quot;), &quot;TAL&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T08001&quot;), &quot;SAL&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04006&quot;), &quot;CS&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03004&quot;), &quot;INT&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03005&quot;), &quot;PRO&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T14002&quot;), &quot;API&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04005&quot;), &quot;SAP&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T16002&quot;), &quot;XTR&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T16003&quot;), &quot;ARQC&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T16004&quot;), &quot;DE&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00E00000&quot;), &quot;EC&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00E00006&quot;), &quot;SC&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00E10000&quot;), &quot;EE&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00I00004&quot;), &quot;BV&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04007&quot;), &quot;BIGD&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T18002&quot;), &quot;BC&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T02001&quot;), &quot;ST&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T02002&quot;), &quot;GR&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T02003&quot;), &quot;IN&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T03001&quot;), &quot;UX&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T03002&quot;), &quot;UI&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T03003&quot;), &quot;RE&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T06001&quot;), &quot;BR&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T06002&quot;), &quot;ME&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04001&quot;), &quot;MA&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04002&quot;), &quot;SEO&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04005&quot;), &quot;AN&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04003&quot;), &quot;PM&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04004&quot;), &quot;DS&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T05001&quot;), &quot;FR&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T05002&quot;), &quot;BA&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T05003&quot;), &quot;DO&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T04008&quot;), &quot;IA&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T19002&quot;), &quot;PD&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T19003&quot;), &quot;I&amp;A&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T17003&quot;), &quot;E&amp;E&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T17004&quot;), &quot;IND&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04006&quot;), &quot;PE&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T04007&quot;), &quot;TE&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T09001&quot;), &quot;DA&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T06001&quot;), &quot;BR&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T06002&quot;), &quot;SM&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T03009&quot;), &quot;FE&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;ES00T19004&quot;), &quot;DF&quot;, NULL) +
+if(ISPICKVAL( {!$Record.Area__c}, &quot;TS00T04001&quot;), &quot;S4&quot;, NULL)+
+if(ISPICKVAL( {!$Record.Area__c}, &quot;NT00T10001&quot;), &quot;SES&quot;, NULL)</expression>
+    </formulas>
+    <formulas>
+        <name>NamePS</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+    TRIM(
+        IF(
+            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+            &quot;NA-V-&quot;,
+            IF(
+                OR(ISPICKVAL({!$Record.Sede__c}, &apos;1120&apos;), ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+                &quot;NA-&quot;,
+                IF(
+                    AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),
+                    &quot;SB-V&quot;,
+                    IF(
+                        ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),
+                        &quot;SB-&quot;,
+                        IF(
+                            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;)),
+                            &quot;T4S-V&quot;,
+                            IF(
+                                ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),
+                                &quot;T4S-&quot;,
+                                IF(
+                                    ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),
+                                    &quot;CH-&quot;,
+                                    &quot;ES-&quot;
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        ) +
+        IF(
+            ISNULL({!$Record.Oportunidad__r.Account.Name}), 
+            &quot;--&quot;,
+            LEFT(TRIM({!$Record.Oportunidad__r.Account.Name}), 11)
+        ) + &quot;-&quot; +&apos;PS-&apos;+
+        {!formula} + &quot;-&quot; +
+        RIGHT({!$Record.Oportunidad__r.Codigo_de_oportunidad__c}, 4) + &quot;-&quot; +
+        LEFT({!$Record.Oportunidad__r.Name}, 11)
+    ),
+    40
+)</expression>
+    </formulas>
+    <formulas>
+        <name>NombreSAP</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+    TRIM(
+        IF(
+            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+            &quot;NA-V-&quot;,
+            IF(
+                OR(ISPICKVAL({!$Record.Sede__c}, &apos;1120&apos;), ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+                &quot;NA-&quot;,
+                IF(
+                    AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),
+                    &quot;SB-V&quot;,
+                    IF(
+                        ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),
+                        &quot;SB-&quot;,
+                        IF(
+                            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;)),
+                            &quot;T4S-V&quot;,
+                            IF(
+                                ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),
+                                &quot;T4S-&quot;,
+                                IF(
+                                    ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),
+                                    &quot;CH-&quot;,
+                                    &quot;ES-&quot;
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        ) +
+        IF(
+            ISNULL({!$Record.Oportunidad__r.Account.Name}), 
+            &quot;--&quot;,
+            LEFT(TRIM({!$Record.Oportunidad__r.Account.Name}), 11)
+        ) + &quot;-&quot; +
+         {!formula} + &quot;-&quot; +
+        RIGHT({!$Record.Oportunidad__r.Codigo_de_oportunidad__c}, 4) + &quot;-&quot; +
+        LEFT({!$Record.Oportunidad__r.Name}, 11)
+    ),
+    40
+)</expression>
+    </formulas>
+    <interviewLabel>Area Corta Sap {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Area Corta Sap</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Field</name>
+        <label>Update Field</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Area_Corta_Flow__c</field>
+            <value>
+                <elementReference>formula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Execution_SAP_Name__c</field>
+            <value>
+                <elementReference>NombreSAP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>NEW_Nombre_SAP__c</field>
+            <value>
+                <elementReference>NamePS</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Field</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.Area__c}) || ISCHANGED({!$Record.Sede__c} )|| ISNEW()</filterFormula>
+        <object>Linea_de_Proyecto__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

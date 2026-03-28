@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Asignar_cuenta_relacionado_a_contacto</name>
+        <label>Asignar cuenta relacionado a contacto</label>
+        <locationX>418</locationX>
+        <locationY>59</locationY>
+        <assignmentItems>
+            <assignToReference>Contacto_entrante.AccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Cuenta_recuperada.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Actualizar_contacto</targetReference>
+        </connector>
+    </assignments>
+    <interviewLabel>Actualizar cuenta relacionada {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Actualizar cuenta relacionada</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Obtener_cuenta_a_asociar</name>
+        <label>Obtener cuenta a asociar</label>
+        <locationX>240</locationX>
+        <locationY>54</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Asignar_cuenta_relacionado_a_contacto</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Contacto_entrante.Department</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>Cuenta_recuperada</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Actualizar_contacto</name>
+        <label>Actualizar contacto</label>
+        <locationX>617</locationX>
+        <locationY>66</locationY>
+        <inputReference>Contacto_entrante</inputReference>
+    </recordUpdates>
+    <startElementReference>Obtener_cuenta_a_asociar</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>Contacto_entrante</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>Cuenta_recuperada</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>

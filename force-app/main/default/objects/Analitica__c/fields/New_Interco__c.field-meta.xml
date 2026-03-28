@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Interco__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(AND (Cuenta__r.Cuenta_Interna__c=True,Cuenta__r.GSO_Region__c != Sede_Venta__r.GSO_Region__c ),&apos;Offshore Interco&apos;,
+if( Cuenta__r.Cuenta_Interna__c=True,&apos;All Interco&apos;,&apos;Directo&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New Interco</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

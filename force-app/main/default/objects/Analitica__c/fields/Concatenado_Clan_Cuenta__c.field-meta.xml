@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concatenado_Clan_Cuenta__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( or(RecordType.Name==&apos;Cierre&apos;, RecordType.Name==&apos;Backlog&apos;), Cuenta__r.Name + &apos;--&apos; +TEXT( Clan__c),Cuenta__r.Name + &apos;--&apos; +TEXT( Linea_de_Proyecto__r.Gerencia__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Concatenado Cuenta-Clan</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

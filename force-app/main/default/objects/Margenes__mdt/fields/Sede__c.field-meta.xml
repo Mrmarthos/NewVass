@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sede__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sede</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1210</fullName>
+                <default>true</default>
+                <label>1210</label>
+            </value>
+            <value>
+                <fullName>1000</fullName>
+                <default>false</default>
+                <label>1000</label>
+            </value>
+            <value>
+                <fullName>1110</fullName>
+                <default>false</default>
+                <label>1110</label>
+            </value>
+            <value>
+                <fullName>4410</fullName>
+                <default>false</default>
+                <label>VASS Perú</label>
+            </value>
+            <value>
+                <fullName>VASS Colombia</fullName>
+                <default>false</default>
+                <label>VASS Colombia</label>
+            </value>
+            <value>
+                <fullName>VASS México</fullName>
+                <default>false</default>
+                <label>VASS México</label>
+            </value>
+            <value>
+                <fullName>VASS Chile</fullName>
+                <default>false</default>
+                <label>VASS Chile</label>
+            </value>
+            <value>
+                <fullName>2110</fullName>
+                <default>false</default>
+                <label>VASS UK</label>
+            </value>
+            <value>
+                <fullName>VASS Benelux</fullName>
+                <default>false</default>
+                <label>VASS Benelux</label>
+            </value>
+            <value>
+                <fullName>1800</fullName>
+                <default>false</default>
+                <label>1800</label>
+            </value>
+            <value>
+                <fullName>VDSHOP</fullName>
+                <default>false</default>
+                <label>VDSHOP</label>
+            </value>
+            <value>
+                <fullName>Comunytek</fullName>
+                <default>false</default>
+                <label>Comunytek</label>
+            </value>
+            <value>
+                <fullName>1410</fullName>
+                <default>false</default>
+                <label>T4S</label>
+            </value>
+            <value>
+                <fullName>CRI</fullName>
+                <default>false</default>
+                <label>CRI</label>
+            </value>
+            <value>
+                <fullName>One</fullName>
+                <default>false</default>
+                <label>One</label>
+            </value>
+            <value>
+                <fullName>Movetia</fullName>
+                <default>false</default>
+                <label>Movetia</label>
+            </value>
+            <value>
+                <fullName>4000</fullName>
+                <default>false</default>
+                <label>Nateevo MX</label>
+            </value>
+            <value>
+                <fullName>4010</fullName>
+                <default>false</default>
+                <label>Nateevo CO</label>
+            </value>
+            <value>
+                <fullName>4001</fullName>
+                <default>false</default>
+                <label>Nateevo M360</label>
+            </value>
+            <value>
+                <fullName>1100</fullName>
+                <default>false</default>
+                <label>1100</label>
+            </value>
+            <value>
+                <fullName>VASS GERMANY</fullName>
+                <default>false</default>
+                <label>VASS GERMANY</label>
+            </value>
+            <value>
+                <fullName>4700</fullName>
+                <default>false</default>
+                <label>4700</label>
+            </value>
+            <value>
+                <fullName>1120</fullName>
+                <default>false</default>
+                <label>1120</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TokenSAP</label>
+    <protected>false</protected>
+    <values>
+        <field>EndPoint__c</field>
+        <value xsi:type="xsd:string">https://salesforceintegrationsap.vass.es/sap/opu/odata/sap/ZWSSALESFORCE_SRV/grupo_clientes</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">V@ss_2022</value>
+    </values>
+    <values>
+        <field>User__c</field>
+        <value xsi:type="xsd:string">Wsales</value>
+    </values>
+</CustomMetadata>

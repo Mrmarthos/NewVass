@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Eppm</label>
+    <protected>false</protected>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">https://vasscompany-is000001.it-cpi018-rt.cfapps.eu10-003.hana.ondemand.com/http/EPPM/Iniciativa_QAS</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">345d536e-0b8e-4201-99b6-1752d943e8d8$nNk8M8XZnACPN6KMFGw19b8E5Q-lfQ7fGkeHi3tCngY=</value>
+    </values>
+    <values>
+        <field>Username__c</field>
+        <value xsi:type="xsd:string">sb-027c5f11-ad5e-4c87-879b-06d645232d1c!b171312|it-rt-vasscompany-is000001!b117912</value>
+    </values>
+</CustomMetadata>

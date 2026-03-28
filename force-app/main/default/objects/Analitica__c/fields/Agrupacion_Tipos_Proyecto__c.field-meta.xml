@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agrupacion_Tipos_Proyecto__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( OR(ISPICKVAL( Tipo_Proyecto__c , &apos;ZLCWIP&apos;) , 
+Linea_de_Proyecto__r.RecordType.Name =&apos;Licencias&apos;, 
+Linea_de_Proyecto__r.RecordType.Name =&apos;Licencias - Renovación&apos;,
+Linea_de_Proyecto__r.RecordType.Name =&apos;Licencias - Servicios&apos;),&apos;Licencias&apos;,&apos;Servicios&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agrupacion Tipos Proyecto</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

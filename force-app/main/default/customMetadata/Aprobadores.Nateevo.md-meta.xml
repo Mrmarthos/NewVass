@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Nateevo</label>
+    <protected>false</protected>
+    <values>
+        <field>Aprobador1__c</field>
+        <value xsi:type="xsd:string">0050N0000093l9aQAA</value>
+    </values>
+    <values>
+        <field>Aprobador2__c</field>
+        <value xsi:type="xsd:string">0050N0000093l9aQAA</value>
+    </values>
+    <values>
+        <field>Aprobador3__c</field>
+        <value xsi:type="xsd:string">0050N0000093l9pQAA</value>
+    </values>
+    <values>
+        <field>Aprobador4__c</field>
+        <value xsi:type="xsd:string">0050N0000093lAOQAY</value>
+    </values>
+    <values>
+        <field>Extra__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Menos_5__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Offering__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SW__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Sede__c</field>
+        <value xsi:type="xsd:string">1110</value>
+    </values>
+</CustomMetadata>

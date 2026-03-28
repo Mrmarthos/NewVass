@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agrupacion_Importes_TOP_Accountas__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( AND(RecordType.Name =&apos;Cierre&apos; , YEAR(Fecha__c )=2021),&apos;Cierre 2021&apos;,
+if( AND(RecordType.Name =&apos;Cierre&apos; , YEAR(Fecha__c )=2022),&apos;Cierre 2022&apos;,
+if(AND(OR(RecordType.Name =&apos;ForecastDeLinea&apos;,RecordType.Name =&apos;Backlog&apos;,RecordType.Name =&apos;Cierre&apos;) , YEAR(Fecha__c ) =2022),&apos;Forecast 2022&apos;,
+if(AND(OR(RecordType.Name =&apos;ForecastDeLinea&apos;,RecordType.Name =&apos;Backlog&apos;,RecordType.Name =&apos;Cierre&apos;) , YEAR(Fecha__c ) =2023),&apos;Forecast 2023&apos;,
+if( AND(RecordType.Name =&apos;Presupuesto&apos; , YEAR(Fecha__c )=2022),&apos;Presupuesto 2022&apos;,
+if( AND(RecordType.Name =&apos;Presupuesto&apos; , YEAR(Fecha__c )=2023),&apos;Presupuesto 2023&apos;,
+
+&apos;Otros&apos;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agrupacion Importes TOP Accounts</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

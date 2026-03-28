@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EsIntercompany__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+OR(TEXT(Sede__c)==&apos;1100&apos; &amp;&amp; TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;1000&apos;,
+TEXT(Sede__c)==&apos;1000&apos; &amp;&amp; TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;1100&apos;,
+TEXT(Sede__c)==&apos;1110&apos; &amp;&amp; TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;1120&apos;,
+TEXT(Sede__c)==&apos;1120&apos; &amp;&amp; TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;1110&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;VASS Sweden&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;2110&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;2600&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;2700&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;6700&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;4710&apos;,
+TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)==&apos;6720&apos;
+
+
+)
+
+
+,false,  AND(TEXT(Sede__c)!= TEXT(Oportunidad__r.Sede_Venta__r.Sede__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EsIntercompany</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+.THIS .spins::after {
+    position: absolute;
+    content: 'Enviando..';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+}
+
+.THIS.slds-modal__container{
+ max-width: 700px !important;
+ width:7000px !important;
+}

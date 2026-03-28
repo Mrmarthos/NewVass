@@ -1,0 +1,88 @@
+<template>
+    <!-- CARD PRINCIPAL SIEMPRE VISIBLE HASTA QUE EL MODAL ESTÁ LISTO -->
+    <lightning-card title="Economic Excel Upload" icon-name="custom:custom19">
+        <div class="slds-m-around_medium">
+            <p class="slds-text-heading_small slds-m-bottom_small">Upload economic excel file here</p>
+            <lightning-file-upload
+                label="Select File"
+                name="fileUploader"
+                accept={acceptedFormats}
+                record-id={recordId}
+                onuploadfinished={handleUploadFinished}>
+            </lightning-file-upload>
+        </div>
+        <!-- Spinner de carga mientras se procesa el archivo -->
+        <template if:true={showSpinner}>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+            <div class="slds-modal slds-fade-in-open" style="z-index: 10000;">
+                <div class="slds-modal__container slds-align_absolute-center">
+                    <lightning-spinner alternative-text="Processing..." size="large"></lightning-spinner>
+                    <div class="slds-text-heading_medium slds-m-top_medium">Processing file, please wait...</div>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+
+    <!-- MODAL DE PREVISUALIZACIÓN SOLO CUANDO LOS DATOS ESTÁN LISTOS -->
+    <template if:true={showModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="max-width: 1400px;">
+                <header class="slds-modal__header slds-modal__header_empty">
+                    <div class="slds-p-top_x-large slds-p-bottom_medium slds-align_absolute-center">
+                        <lightning-icon icon-name="doctype:csv" alternative-text="CSV Data Preview" size="large" class="slds-m-right_small"></lightning-icon>
+                        <span class="slds-text-heading_large slds-text-title_bold">CSV Data Preview</span>
+                    </div>
+                    <h2 class="slds-modal__title slds-hyphenate" style="margin-top: 1rem;">Grouped file preview</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" style="background: #f4f6f9; max-height: 60vh; overflow-y: auto;">
+                    <!-- Info message -->
+                    <div class="slds-notify slds-notify_alert slds-alert_info" role="alert" style="margin-bottom: 1rem;">
+                        <span class="slds-assistive-text">Info</span>
+                        <span class="slds-icon_container slds-icon-utility-info slds-m-right_x-small" title="Info">
+                            <lightning-icon icon-name="utility:info" size="small"></lightning-icon>
+                        </span>
+                        <span>
+                            To upload the economic Excel file, all Salesforce project lines must be included in the CSV (same delivery company, area, practice and type).
+                        </span>
+                    </div>
+                    <!-- Warning message if needed -->
+                    <template if:true={csvWarning}>
+                        <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert" style="margin-bottom: 1rem;">
+                            <span class="slds-assistive-text">Warning</span>
+                            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Warning">
+                                <lightning-icon icon-name="utility:warning" size="small"></lightning-icon>
+                            </span>
+                            <span>{csvWarning}</span>
+                        </div>
+                    </template>
+                    <!-- Agrupación de tablas -->
+                    <template for:each={groupedData} for:item="group">
+                        <div key={group.groupName} class="slds-m-bottom_large">
+                            <div class="slds-text-title_bold slds-m-bottom_small slds-theme_shade slds-p-around_x-small" style="border-radius: 4px;">
+                                {group.groupName}
+                            </div>
+                            <lightning-datatable
+                                key-field="id"
+                                data={group.rows}
+                                columns={columns}
+                                hide-checkbox-column
+                                class="slds-table_bordered slds-table_cell-buffer">
+                            </lightning-datatable>
+                        </div>
+                    </template>
+                </div>
+                <footer class="slds-modal__footer">
+                    <div class="slds-text-color_error slds-m-bottom_x-small">
+                        <lightning-icon icon-name="utility:warning" size="xx-small" class="slds-m-right_x-small"></lightning-icon>
+                        <span>Do not close this window until you click "Continue" and the process finishes.</span>
+                    </div>
+                    <lightning-button label="Cancel" onclick={handleCancel} class="slds-m-right_small"></lightning-button>
+                    <template if:false={hideContinueButton}>
+                        <lightning-button variant="brand" label="Continue" onclick={handleContinue}></lightning-button>
+                    </template>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

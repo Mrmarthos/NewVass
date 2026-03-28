@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EsLL__c</fullName>
+    <externalId>false</externalId>
+    <formula>Linea_de_Proyecto__r.Nombre_Tipo_Registro__c ==&apos;Llave en Mano&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EsLL</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

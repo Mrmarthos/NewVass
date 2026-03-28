@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contador_Licencias_validadas__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows the amount of active licenses valid to change to &quot;Presented&quot; stage and for their syncronizaction with SAP</inlineHelpText>
+    <label>Contador Licencias validadas</label>
+    <summaryFilterItems>
+        <field>Licencia__c.Activa__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Licencia__c.Datos_validados__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Licencia__c.Linea_de_Proyecto__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

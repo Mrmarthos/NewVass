@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOLA</fullName>
+    <active>true</active>
+    <label>SOLA</label>
+    <picklistValues>
+        <picklist>Clan_Principal__c</picklist>
+        <values>
+            <fullName>Customer Centric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Cross</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Governance %26 Infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovación %28BV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration %26 Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intelligent Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Brand Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Data %26 Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Delivery Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nateevo - Smartech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulatory %26 Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S%2F4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP CX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sin Asignar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tailor-Made Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MarketType__c</picklist>
+        <values>
+            <fullName>A%2EPub-Admin%2E Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive %26 Mobility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banca-Banca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industria-Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics %26 Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Consumer Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguros-Seguros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telco-Telco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel%2C Hospitality %26 Leisure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonOfCancellation__c</picklist>
+        <values>
+            <fullName>Canceled by administrative process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VASS does not offer due to commercial decision</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Solution__c</picklist>
+        <values>
+            <fullName>360 Process Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4Banking Modernization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adaptative Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atención cognitiva %28IA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automoción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behavioral Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond Customer Customization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockchain Decision chart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockchain VP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buscador inteligente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Agility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCaaS%2E Contact Center as a Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Customer Data Atraction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLEO Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card Disputes Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Challenge Loyalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciberseguridad Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud VP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cognitive Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cognitive Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection and payment recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CommerceHUB %28Pymes%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company in a Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ContentPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cookieless</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Digital Asegurador en el CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Loyalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Process Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBC Digital Business Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data %26 Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datamorphosys-DataXtreme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DevOps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Business Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Business Loan solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Contact Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Workplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecosistema DIGITAL%2E Core Asegurador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación %28PV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eficiencia Operativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eficiencia y Digitalización del Agua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elastic Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elastic Hybrid Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethical use of data %28PV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fast Track Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fast checkin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services %E2%80%93 HouseKeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeoInsurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión de citas %2B Video atención</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Banking Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higía Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hipoteca Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICIB_Innovative Corporate Investment Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identidad Digital Adaptativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InnerSource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InsurMarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InsuranSubscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intelligence automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intelligent Banking %28Agregación avanzada%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intligence Conversational Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaiman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lean Talent %26 Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketbanking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modelo Operativo Digital %28VASSXtreme%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Intelligence for Corporate Knowledge %28NICK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding End to End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Single Vision for sustainable finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSD2%3A Open Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Path to Customer Anywhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PharmaMarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Automation for DPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Automation for Higher Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process excellence in system migrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotor Virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantum computing %2B GPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recobro gamificado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recobro proactivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Digital Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RetailBox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue Growth Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue Growth for Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMoK%2E Smart Management of Knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Performance Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicios Públicos Proactivos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart IT Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart IoT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Trading Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartWorking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student and Educational organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain_Gran Consumo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telco%E2%80%99s Process Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VASS4GOOD ESG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video atención</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voice Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voice experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z21 Arquitectura Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z21 Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eEnergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iAM Mantenimiento de aplicaciones inteligente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Analyse Assigment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Execute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>ExecutionName</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+    TRIM(
+        IF(
+            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+            &quot;NA-V-&quot;,
+            IF(
+                OR(ISPICKVAL({!$Record.Sede__c}, &apos;1120&apos;), ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+                &quot;NA-&quot;,
+                IF(
+                    AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),
+                    &quot;SB-V&quot;,
+                    IF(
+                        ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),
+                        &quot;SB-&quot;,
+                        IF(
+                            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;)),
+                            &quot;T4S-V&quot;,
+                            IF(
+                                ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),
+                                &quot;T4S&quot;,
+                                IF(
+                                    ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),
+                                    &quot;CH-&quot;,
+                                    &quot;ES-&quot;
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        ) +
+        IF(
+            ISNULL({!$Record.Oportunidad__r.Account.Name}), 
+            &quot;--&quot;,
+            LEFT(TRIM({!$Record.Oportunidad__r.Account.Name}), 11)
+        ) + &quot;-&quot; +
+        {!$Record.Area_Corta__c} + &quot;-&quot; +
+        RIGHT({!$Record.Oportunidad__r.Codigo_de_oportunidad__c}, 4) + &quot;-&quot; +
+        LEFT({!$Record.Oportunidad__r.Name}, 11)
+    ),
+    40
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Name</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+    TRIM(
+        IF(
+            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+            &quot;NA-V-&quot;,
+            IF(
+                OR(ISPICKVAL({!$Record.Sede__c}, &apos;1120&apos;), ISPICKVAL({!$Record.Sede__c}, &apos;1110&apos;)),
+                &quot;NA-&quot;,
+                IF(
+                    AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;)),
+                    &quot;SB-V&quot;,
+                    IF(
+                        ISPICKVAL({!$Record.Sede__c}, &apos;1210&apos;),
+                        &quot;SB-&quot;,
+                        IF(
+                            AND({!$Record.EsIntercompany__c} = TRUE, ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;)),
+                            &quot;T4S-V&quot;,
+                            IF(
+                                ISPICKVAL({!$Record.Sede__c}, &apos;1410&apos;),
+                                &quot;T4S&quot;,
+                                IF(
+                                    ISPICKVAL({!$Record.Sede__c}, &apos;4110&apos;),
+                                    &quot;CH-&quot;,
+                                    &quot;ES-&quot;
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        ) +
+        IF(
+            ISNULL({!$Record.Oportunidad__r.Account.Name}), 
+            &quot;--&quot;,
+            LEFT(TRIM({!$Record.Oportunidad__r.Account.Name}), 11)
+        ) + &quot;-&quot; +&apos;PS-&apos;+
+        {!$Record.Area_Corta__c} + &quot;-&quot; +
+        RIGHT({!$Record.Oportunidad__r.Codigo_de_oportunidad__c}, 4) + &quot;-&quot; +
+        LEFT({!$Record.Oportunidad__r.Name}, 11)
+    ),
+    40
+)</expression>
+    </formulas>
+    <interviewLabel>SAPName {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SAPName</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>SetSAPName</name>
+        <label>SetSAPName</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Execution_SAP_Name__c</field>
+            <value>
+                <elementReference>ExecutionName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>NEW_Nombre_SAP__c</field>
+            <value>
+                <elementReference>Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SetSAPName</targetReference>
+        </connector>
+        <object>Linea_de_Proyecto__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoyelGerente__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR( Responsable_de_LDP__r.Id= $User.Id , Responsable_de_SW__r.Id=$User.Id)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SoyelGerente</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

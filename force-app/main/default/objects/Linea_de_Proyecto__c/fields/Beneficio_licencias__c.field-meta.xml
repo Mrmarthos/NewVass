@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beneficio_licencias__c</fullName>
+    <externalId>false</externalId>
+    <label>Beneficio licencias</label>
+    <summarizedField>Licencia__c.Beneficio__c</summarizedField>
+    <summaryFilterItems>
+        <field>Licencia__c.Activa__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Licencia__c.Linea_de_Proyecto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

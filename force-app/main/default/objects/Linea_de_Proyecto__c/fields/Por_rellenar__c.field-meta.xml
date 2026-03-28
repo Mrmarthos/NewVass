@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Por_rellenar__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(Nombre_Tipo_Registro__c !=&apos;Rate Card&apos;,IF(ISBLANK( Jefe_de_Proyecto_de_Preventa__c ), &quot;PM, &quot;,&quot;&quot;) &amp;
+IF(ISBLANK( Responsable_de_LDP__c ), &quot;LDP Responsible, &quot;,&quot;&quot;) &amp;
+IF(ISBLANK(TEXT( Tecnologia__c )), &quot;Technology, &quot;,&quot;&quot;) &amp;
+IF(NOT(ISPICKVAL( Oportunidad__r.StageName , &quot;Identificada&quot;)) &amp;&amp; NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Solicitada&quot;)) &amp;&amp; ISBLANK( Coste_estimado__c ), &quot;Estimated Cost, &quot;,&quot;&quot;) &amp;
+IF(NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Identificada&quot;)) &amp;&amp; NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Solicitada&quot;)) &amp;&amp; ISBLANK( Fecha_Fin__c ), &quot;End Date, &quot;,&quot;&quot;) &amp;
+IF(NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Identificada&quot;)) &amp;&amp; NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Solicitada&quot;)) &amp;&amp; ISBLANK( Fecha_Inicio__c ), &quot;Start Date, &quot;,&quot;&quot;) &amp;
+IF(NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Identificada&quot;)) &amp;&amp; NOT(ISPICKVAL(Oportunidad__r.StageName, &quot;Solicitada&quot;)) &amp;&amp; ISBLANK( Importe_total_2__c ), &quot;Total Amount, &quot;,&quot;&quot;),&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Field to be fullfiled</inlineHelpText>
+    <label>Por rellenar</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

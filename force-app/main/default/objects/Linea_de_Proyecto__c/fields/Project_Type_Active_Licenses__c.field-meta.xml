@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type_Active_Licenses__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(AND(OR(RecordType.Name==&apos;Licencias&apos;,RecordType.Name==&apos;Licencias - Renovación&apos;,RecordType.Name==&apos;Licencias - Servicios&apos;), Licencias_activas__c&gt;0) ,&apos;Licencias&apos;,if(AND(OR(RecordType.Name==&apos;Licencias&apos;,RecordType.Name==&apos;Licencias - Renovación&apos;,RecordType.Name==&apos;Licencias - Servicios&apos;), Licencias_activas__c=0),&apos;-&apos;,&apos;Servicios&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Type Active Licenses</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

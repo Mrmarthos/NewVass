@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clave_Periodificacion__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  RecordType.Name  , 
+&apos;Licencias&apos;, &apos;ZLCWIP&apos;, 
+&apos;Llave en Mano&apos;, &apos;ZLLWIP&apos;, 
+&apos;Hosting&apos;, &apos;ZLCWIP&apos;, 
+&apos;T&amp;M&apos;, &apos;ZTMWIP&apos;, 
+&apos;Licencias - Renovación&apos;, &apos;ZLCWIP&apos;, 
+&apos;Licencias - Servicios&apos;,&apos;ZLCWIP&apos;, 
+&apos;AM&apos;, if(  ISPICKVAL(Tipo_de_ingreso__c , &apos;Por producción&apos;), &apos;ZVAWIP&apos;,&apos;ZFIJOS&apos;),
+&apos;Guardias&apos;,&apos;ZVAWIP&apos;, 
+&apos;Servicio Variable&apos;,&apos;ZVAWIP&apos;, &apos;&apos;
+ 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Clave Periodificación</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

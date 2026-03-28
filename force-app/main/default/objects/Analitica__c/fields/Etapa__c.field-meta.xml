@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etapa__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Text(Linea_de_Proyecto__r.Oportunidad__r.StageName),
+    &quot;Prior Information&quot;, &quot;Preliminary Information&quot;,
+    &quot;Identificada&quot;, &quot;Identified&quot;,
+    &quot;Solicitada&quot;, &quot;Requested&quot;,
+    &quot;Team Analysis&quot;, &quot;Team Analysis&quot;,
+    &quot;Preventa&quot;, &quot;Pre-sales&quot;,
+    &quot;Entregada&quot;, &quot;Delivered&quot;,
+    &quot;Submitted&quot;, &quot;Submitted&quot;,
+    &quot;Under preparation&quot;, &quot;Under Preparation&quot;,
+    &quot;Presentada&quot;, &quot;Presented&quot;,
+    &quot;Ganada&quot;, &quot;Won&quot;,
+    &quot;Perdida&quot;, &quot;Lost&quot;,
+    &quot;Cancelada&quot;, &quot;Cancelled&quot;,
+    &quot;Finalizada&quot;, &quot;Completed&quot;,
+    &quot;Pendiente Aprobacion&quot;, &quot;Pending Approval&quot;,
+    &quot;Unknown&quot;  
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etapa</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

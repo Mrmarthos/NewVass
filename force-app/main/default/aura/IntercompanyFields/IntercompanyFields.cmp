@@ -1,0 +1,29 @@
+<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    
+     <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="sObjectName" type="String" default="Linea_de_Proyecto__c" />
+	
+    <aura:attribute name="sObjectFieldsIntercompany" type="String[]" default="['Importe_Total_Intercompany__c','Coste_Estimado_Intercompany__c','Margen_Intercompany__c','Beneficio_Intercompany__c','Refacturable__c']"/>
+    
+     <aura:attribute name="headerTitle1" type="Aura.Component[]">
+        
+    </aura:attribute>
+    
+      <div class="slds-box slds-theme_default">   
+        <lightning:recordForm aura:id="AsistenciaEnViajeForm" 
+                              class="slds-p-left_medium"
+                              recordId="{!v.recordId}" 
+                              objectApiName="{!v.sObjectName}" 
+                              fields="{!v.sObjectFieldsIntercompany}"
+                              density="comfy"
+                              columns="2"
+                              mode="view"
+                         
+                              />   
+    
+   
+    </div>
+ 
+    
+    
+</aura:component>

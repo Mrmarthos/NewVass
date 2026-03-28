@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen_Analitica__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(RecordType.Name==&apos;Backlog&apos;,&apos;Backlog&apos; ,
+
+if(RecordType.Name==&apos;Cierre&apos;,&apos;Cierre&apos;,
+
+if(RecordType.Name==&apos;ForecastDeLinea&apos;, &apos;Forecast&apos;,
+
+if(RecordType.Name==&apos;Presupuesto&apos;,&apos;Presupuesto&apos;,&apos;null&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Origen Analítica</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

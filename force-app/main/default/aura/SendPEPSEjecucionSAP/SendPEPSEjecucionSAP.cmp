@@ -1,0 +1,70 @@
+<aura:component   controller = "CallSAPSincro"  implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"  access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="toggleSpinner" type="boolean" default="false"/> 
+    <aura:attribute name="showError" type="boolean" default="false"/> 
+    <aura:attribute name="showsuccess" type="boolean" default="false"/> 
+    <aura:attribute name="showlp" type="boolean" default="true"/> 
+    <aura:attribute name="Message" type="boolean" default=""/> 
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="maxRowSelection" type="Integer" default="5"/>
+    <aura:attribute name="selectedRowsList" type="List" />
+    
+    <ltng:require styles="{!$Resource.cssModal}" />
+        <aura:if isTrue="{!v.showlp}">
+    <div >
+        
+        <h1>Number of lines: {! v.selectedRowsCount }</h1>
+        <lightning:datatable
+                             columns="{! v.columns }"
+                             data="{! v.data }"
+                             keyField="id"
+                             maxRowSelection="{! v.maxRowSelection }"
+                             onrowselection="{! c.updateSelectedText }"
+                             onrowaction="{!c.handleRowAction}"
+                             />
+        
+        
+    </div> 
+
+    <aura:if isTrue="{!v.toggleSpinner}">
+        <div class="slds-modal__content slds-p-around--l slds-is-relative slds-align_absolute-center" style="height: 210px;">
+            
+            <lightning:spinner class="spins" size="large" variant="brand" alternativeText="Loading" />            
+            
+        </div> 
+    </aura:if>
+
+    <div class="slds-col modal-footer slds-modal__footer">  
+        <button class="slds-button slds-button_success " onclick="{!c.send}">Send Selected to SAP</button>
+        <button class="slds-button slds-button_success" onclick="{!c.sendall}">Send All to SAP</button>
+    </div> 
+                <div class="slds-text-body_regular">*If applies</div>
+            </aura:if> 
+    <aura:if isTrue="{!v.showError}">
+        <!-- Show the message to ui -->
+        <div class="slds-notify slds-notify_toast slds-theme_error slds-align_absolute-center">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+                <h5 class="slds-text-heading_medium slds-align_absolute-center">Error</h5>
+                <br/>
+                <p class="slds-align_absolute-center">{!v.Message}</p>                
+            </div>
+        </div>
+    </aura:if> 
+    
+    
+    <aura:if isTrue="{!v.showsuccess}">
+        <!-- Show the message to ui -->
+        <div class="slds-notify slds-notify_toast slds-theme_success slds-align_absolute-center">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+                <h5 class="slds-text-heading_medium slds-align_absolute-center">Sucess </h5>
+                <br/>
+                <p class="slds-align_absolute-center">{!v.Message}</p>                
+            </div>
+        </div>
+    </aura:if> 
+    
+</aura:component>

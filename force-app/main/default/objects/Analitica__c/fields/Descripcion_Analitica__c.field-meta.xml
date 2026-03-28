@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descripcion_Analitica__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(RecordType.Name==&apos;Backlog&apos;, (&apos;Analítica de Backlog generada por el PEP:&quot;&apos;+ Elemento_PEP__c+&apos; con fecha:&apos;+  TEXT( Fecha__c )  +&apos;&quot; e importe: &apos;+  TEXT(   Importe_LP__c )+&apos; &apos;+ TEXT(CurrencyIsoCode)  ),
+
+if(RecordType.Name==&apos;Cierre&apos;, (&apos;Analítica de Cierre generada por el PEP:&quot;&apos;+ Elemento_PEP__c+&apos;&quot; con fecha:&apos;+  TEXT( Fecha__c )  +&apos; e importe: &apos;+  TEXT(  Importe_LP__c  ) +&apos; &apos;+ TEXT(CurrencyIsoCode)),
+
+if(RecordType.Name==&apos;ForecastDeLinea&apos;, (&apos;Analítica de Forecast generada por la oportunidad:&quot;&apos; +Oportunidad__r.Name +&apos;&quot; con fecha:&apos;+  TEXT(  Fecha__c )  +&apos; e importe: &apos;+&apos;&apos;+  TEXT( round( Importe_Forecast__c ,2))+&apos; &apos;+ TEXT(CurrencyIsoCode)),
+
+if(RecordType.Name==&apos;Presupuesto&apos;, (&apos;Analítica de Presupuesto generada por el PEP:&quot;&apos;+ Elemento_PEP__c+&apos;&quot; con fecha:&apos;+  TEXT(  Fecha__c )  +&apos; e importe: &apos;+  TEXT(    Presupuesto__c )+&apos; &apos;+ TEXT(CurrencyIsoCode) ),&apos;null&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción Analítica</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

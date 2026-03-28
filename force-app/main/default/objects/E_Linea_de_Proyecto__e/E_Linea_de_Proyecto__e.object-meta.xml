@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Evento para integración con SAP, del sObject Linea_de_Proyecto__c</description>
+    <eventType>StandardVolume</eventType>
+    <label>Linea de Proyecto</label>
+    <pluralLabel>Lineas de Proyecto</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

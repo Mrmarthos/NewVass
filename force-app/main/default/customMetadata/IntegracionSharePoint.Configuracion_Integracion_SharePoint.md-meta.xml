@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Configuracion Integracion SharePoint</label>
+    <protected>false</protected>
+    <values>
+        <field>audiencePrincipalId__c</field>
+        <value xsi:type="xsd:string">00000003-0000-0ff1-ce00-000000000000</value>
+    </values>
+    <values>
+        <field>baseURL__c</field>
+        <value xsi:type="xsd:string">/es-es/businessvalue/offering/Biblioteca de Ofertas/</value>
+    </values>
+    <values>
+        <field>base_url__c</field>
+        <value xsi:type="xsd:string">grupovass.sharepoint.com</value>
+    </values>
+    <values>
+        <field>client_id__c</field>
+        <value xsi:type="xsd:string">e7d7a797-bc51-4a15-862e-df2c131ee883</value>
+    </values>
+    <values>
+        <field>client_secret__c</field>
+        <value xsi:type="xsd:string">ocYVU7+NGFzpzS+o20rcGLSshZggAr8/WoOT6eHPomA=</value>
+    </values>
+    <values>
+        <field>endpointSP__c</field>
+        <value xsi:type="xsd:string">https://grupovass.sharepoint.com/es-es/businessvalue/offering/_api/web/folders</value>
+    </values>
+    <values>
+        <field>grant_type__c</field>
+        <value xsi:type="xsd:string">client_credentials</value>
+    </values>
+    <values>
+        <field>site_realm__c</field>
+        <value xsi:type="xsd:string">b716c11f-16a3-4d15-8dbc-f11f7fdefe5a</value>
+    </values>
+    <values>
+        <field>urlSP__c</field>
+        <value xsi:type="xsd:string">https://grupovass.sharepoint.com</value>
+    </values>
+</CustomMetadata>

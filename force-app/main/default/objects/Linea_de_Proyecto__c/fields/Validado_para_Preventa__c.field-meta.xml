@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validado_para_Preventa__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(TEXT( Gerencia__c ))) &amp;&amp;
+NOT(ISBLANK(TEXT( Area__c ))) &amp;&amp; 
+NOT(ISBLANK(TEXT( Tecnologia__c ))) &amp;&amp;
+Validacion_Crossobject_Preventa__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Required fields: Management, Area, Technology, Proyect Leader of Presales</inlineHelpText>
+    <label>Validado para Preventa</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

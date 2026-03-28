@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inducido__c</fullName>
+    <externalId>false</externalId>
+    <label>Inducido</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01</fullName>
+                <default>false</default>
+                <label>Bussines Consulting</label>
+            </value>
+            <value>
+                <fullName>03</fullName>
+                <default>false</default>
+                <label>Talent Solutions</label>
+            </value>
+            <value>
+                <fullName>05002</fullName>
+                <default>false</default>
+                <label>Technology &amp; Cloud</label>
+            </value>
+            <value>
+                <fullName>Cibersecurity</fullName>
+                <default>false</default>
+                <label>Cibersecurity</label>
+            </value>
+            <value>
+                <fullName>22001</fullName>
+                <default>false</default>
+                <label>Cloud Nine Data</label>
+            </value>
+            <value>
+                <fullName>4006</fullName>
+                <default>false</default>
+                <label>Customer Services</label>
+            </value>
+            <value>
+                <fullName>19004</fullName>
+                <default>false</default>
+                <label>Data Foundation</label>
+            </value>
+            <value>
+                <fullName>19002</fullName>
+                <default>false</default>
+                <label>Data Governance</label>
+            </value>
+            <value>
+                <fullName>05004</fullName>
+                <default>false</default>
+                <label>Devops</label>
+            </value>
+            <value>
+                <fullName>02002</fullName>
+                <default>false</default>
+                <label>Digital Business PF</label>
+            </value>
+            <value>
+                <fullName>02006</fullName>
+                <default>false</default>
+                <label>Digital Services</label>
+            </value>
+            <value>
+                <fullName>04002</fullName>
+                <default>false</default>
+                <label>Document Solutions</label>
+            </value>
+            <value>
+                <fullName>17003</fullName>
+                <default>false</default>
+                <label>E&amp;E Transformation</label>
+            </value>
+            <value>
+                <fullName>02003</fullName>
+                <default>false</default>
+                <label>ECommerce</label>
+            </value>
+            <value>
+                <fullName>02004</fullName>
+                <default>false</default>
+                <label>Enterprise Search</label>
+            </value>
+            <value>
+                <fullName>04005</fullName>
+                <default>false</default>
+                <label>ERP</label>
+            </value>
+            <value>
+                <fullName>03009</fullName>
+                <default>false</default>
+                <label>Frontend Services</label>
+            </value>
+            <value>
+                <fullName>03004</fullName>
+                <default>false</default>
+                <label>Hybrid Integration</label>
+            </value>
+            <value>
+                <fullName>04008</fullName>
+                <default>false</default>
+                <label>IA Cognitive Datalab</label>
+            </value>
+            <value>
+                <fullName>17004</fullName>
+                <default>false</default>
+                <label>Industry X Solutions</label>
+            </value>
+            <value>
+                <fullName>19003</fullName>
+                <default>false</default>
+                <label>Innovation Analytics</label>
+            </value>
+            <value>
+                <fullName>04004</fullName>
+                <default>false</default>
+                <label>Inv. Ind. Comunytek</label>
+            </value>
+            <value>
+                <fullName>03003</fullName>
+                <default>false</default>
+                <label>Java &amp; Open Solution</label>
+            </value>
+            <value>
+                <fullName>03006</fullName>
+                <default>false</default>
+                <label>Microsoft Dev Sol</label>
+            </value>
+            <value>
+                <fullName>03002</fullName>
+                <default>false</default>
+                <label>Mobile &amp; IOT</label>
+            </value>
+            <value>
+                <fullName>02007</fullName>
+                <default>false</default>
+                <label>Portal Enterprise PF</label>
+            </value>
+            <value>
+                <fullName>02008</fullName>
+                <default>false</default>
+                <label>Portal Opensource</label>
+            </value>
+            <value>
+                <fullName>03005</fullName>
+                <default>false</default>
+                <label>Processes</label>
+            </value>
+            <value>
+                <fullName>16006</fullName>
+                <default>false</default>
+                <label>QA Services</label>
+            </value>
+            <value>
+                <fullName>08001</fullName>
+                <default>false</default>
+                <label>Salesforce FI Servic</label>
+            </value>
+            <value>
+                <fullName>16005</fullName>
+                <default>false</default>
+                <label>Tech Brewery</label>
+            </value>
+            <value>
+                <fullName>02</fullName>
+                <default>false</default>
+                <label>Xtreme</label>
+            </value>
+            <value>
+                <fullName>16002</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Xtreme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

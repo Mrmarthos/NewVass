@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Datos_validados__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(TEXT( Fabricante__c ))) &amp;&amp;
+NOT(ISBLANK( Comision__c )) &amp;&amp;
+NOT(ISBLANK( Coste_unitario__c )) &amp;&amp;
+NOT(ISBLANK( Margen__c )) &amp;&amp;
+NOT(ISBLANK( Name )) &amp;&amp;
+NOT(ISBLANK( Unidades__c )) &amp;&amp;
+NOT(ISBLANK( Precio_unitario__c )) &amp;&amp;
+NOT(ISBLANK( Fecha_de_activacion__c )) &amp;&amp;
+NOT(ISBLANK( Fecha_de_expiracion__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Comprueba que se encuentran rellenos los campos necesarios para el paso a Entregada y posterior sincronización con SAP</inlineHelpText>
+    <label>Datos validados</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

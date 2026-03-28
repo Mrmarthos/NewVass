@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>VASS Colombia</label>
+    <protected>false</protected>
+    <values>
+        <field>Aprobador1__c</field>
+        <value xsi:type="xsd:string">0050N0000080fKaQAI</value>
+    </values>
+    <values>
+        <field>Aprobador2__c</field>
+        <value xsi:type="xsd:string">0053V000000Q4otQAC</value>
+    </values>
+    <values>
+        <field>Aprobador3__c</field>
+        <value xsi:type="xsd:string">0053V000000Q3GRQA0</value>
+    </values>
+    <values>
+        <field>Aprobador4__c</field>
+        <value xsi:type="xsd:string">0053V000000Q3GRQA0</value>
+    </values>
+    <values>
+        <field>Extra__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Menos_5__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Offering__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SW__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Sede__c</field>
+        <value xsi:type="xsd:string">4210</value>
+    </values>
+</CustomMetadata>

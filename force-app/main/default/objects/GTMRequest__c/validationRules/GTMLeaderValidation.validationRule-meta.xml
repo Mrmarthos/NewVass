@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GTMLeaderValidation</fullName>
+    <active>true</active>
+    <description>Validation to prevent User from select &quot;Execute&quot; Stage if there is no GTM Leader assigned</description>
+    <errorConditionFormula>AND(GTMLeader__c = null,ISPICKVAL( Stage__c, &quot;Execute&quot;))</errorConditionFormula>
+    <errorMessage>It is not possible to select the &quot;Execute&quot; Stage  if there is no GTM Leader assigned.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hiring_Info__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(Not(isblank(Rate__c)),Not(isblank(Estimated_date_of_incorporation__c )),Not(isblank(n_vacantes__c )))</formula>
+    <label>Hiring Info</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

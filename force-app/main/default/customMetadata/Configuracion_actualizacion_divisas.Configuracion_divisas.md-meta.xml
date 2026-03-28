@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Configuración divisas</label>
+    <protected>false</protected>
+    <values>
+        <field>Clave_publica_cliente__c</field>
+        <value xsi:type="xsd:string">3MVG9TSaZ8P6zP1qgSpNuBguZ47jLOyFku6K6zsO5oH4qEL88W4Qsv4IrfyQYWVjZsLcGRAJMebJGl_brwTu.</value>
+    </values>
+    <values>
+        <field>Clave_secreta_cliente__c</field>
+        <value xsi:type="xsd:string">7C04C61CC9C1E866A81BEA2ACC8A9062D561298EC7E1C4A2AC938E3A3F220362</value>
+    </values>
+    <values>
+        <field>Contrasena__c</field>
+        <value xsi:type="xsd:string">wHCorTAS2L2pzrXm</value>
+    </values>
+    <values>
+        <field>DireccionURLTokenAccess__c</field>
+        <value xsi:type="xsd:string">https://vassorg.my.salesforce.com/services/oauth2/token</value>
+    </values>
+    <values>
+        <field>DireccionURL__c</field>
+        <value xsi:type="xsd:string">http://www.floatrates.com/daily/eur.xml</value>
+    </values>
+    <values>
+        <field>Token_seguridad__c</field>
+        <value xsi:type="xsd:string">MNXM7SLQfoRIO6cXfdinagZr</value>
+    </values>
+    <values>
+        <field>Usuario__c</field>
+        <value xsi:type="xsd:string">vassforce.integrator@vass.es</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validado_para_Sincronizacion__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(TEXT( Gerencia__c ))) &amp;&amp; 
+NOT(ISBLANK(TEXT( Area__c ))) &amp;&amp; 
+NOT(ISBLANK(TEXT( Tecnologia__c ))) &amp;&amp;
+NOT(ISBLANK( Coste_estimado__c )) &amp;&amp;
+NOT(ISBLANK( Fecha_Fin__c )) &amp;&amp;
+NOT(ISBLANK( Fecha_Inicio__c )) &amp;&amp;
+NOT(ISBLANK( Margen_bruto__c )) &amp;&amp;
+Validacion_Crossobject_Sincro__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Required fields: Management, Area, Technology, Estimated Cost, End Date, Start Date, Gross Margin, Proyect Leader of Presales, Proyect Leader of Execution</inlineHelpText>
+    <label>Validado para Sincronización</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

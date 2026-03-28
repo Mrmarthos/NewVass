@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>Lob</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+{!$Record.Clan_Principal__c},
+    &quot;Integration &amp; Processes&quot;, &quot;Other&quot;,
+    &quot;Intelligent Technology&quot;, &quot;SAP&quot;,
+    &quot;Cloud Nine&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Governance &amp; Infrastructure&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Regulatory &amp; Data&quot;, &quot;AI, DATA &amp; Cloud&quot;,
+    &quot;Customer Centric&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Digital Experience&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Delivery Cross&quot;, &quot;Other&quot;,
+    &quot;Comunytek&quot;, &quot;Other&quot;,
+    &quot;Tailor-Made Solutions&quot;, &quot;Other&quot;,
+    &quot;Staffing &amp; Hiring (MX)&quot;, &quot;Other&quot;,
+    &quot;SAP CX&quot;, &quot;SAP&quot;,
+    &quot;S/4&quot;, &quot;SAP&quot;,
+    &quot;One Inside&quot;, &quot;Digital Customer Experience&quot;,
+    &quot;Innovación (BV)&quot;, &quot;Other&quot;,
+    &quot;Customer Experience&quot;, &quot;SAP&quot;,
+    &quot;Intelligent Enterprise&quot;, &quot;SAP&quot;,
+    &quot;Nateevo&quot;
+)</expression>
+    </formulas>
+    <interviewLabel>LOB OPP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LOB OPP</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

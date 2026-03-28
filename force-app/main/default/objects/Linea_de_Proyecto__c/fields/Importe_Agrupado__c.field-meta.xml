@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_Agrupado__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( AND(Agrupacion_Tipo_Registro__c ==&apos;Licencias&apos; ,EsIntercompany__c ==false),Importe_de_licencias__c ,
+
+if( AND(Agrupacion_Tipo_Registro__c ==&apos;Servicios&apos; ,EsIntercompany__c ==false) ,Importe_total_2__c  , 
+if(  EsIntercompany__c ==true, Importe_Total_Intercompany__c ,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Importe  Agrupado</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

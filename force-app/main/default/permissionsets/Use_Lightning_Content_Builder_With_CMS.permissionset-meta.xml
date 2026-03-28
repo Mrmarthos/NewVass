@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Cree y modifique el acceso a experiencias de contenido de mejorado en Account Engagement y acceda a espacios de trabajo y canales de Salesforce CMS.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Crear contenido de Account Engagement</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AccessContentBuilder</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AutomateEmailContent</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageEmailContent</name>
+    </userPermissions>
+</PermissionSet>

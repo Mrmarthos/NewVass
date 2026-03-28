@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sede__c</fullName>
+    <defaultValue>if( ISPICKVAL($User.Sede__c ,&apos;1210&apos;),&apos;1210&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;1110&apos;),&apos;1110&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS Perú&apos;),&apos;VASS Perú&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS Colombia&apos;),&apos;VASS Colombia&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS México&apos;),&apos;VASS México&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS Chile&apos;),&apos;VASS Chile&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS UK&apos;),&apos;VASS UK&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;VASS Benelux&apos;),&apos;VASS Benelux&apos;,
+if(ISPICKVAL($User.Sede__c ,&apos;1800&apos;),&apos;1800&apos;,&apos;1000&apos;
+
+)))))))))</defaultValue>
+    <externalId>false</externalId>
+    <label>Sede (Delivery Company)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Sede</valueSetName>
+    </valueSet>
+</CustomField>

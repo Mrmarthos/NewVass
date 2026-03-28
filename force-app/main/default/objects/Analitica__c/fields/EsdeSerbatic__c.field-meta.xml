@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EsdeSerbatic__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR( Oportunidad__r.EsdeSerbatic__c =true, Oportunidad__r.Sede_Venta__r.Name =&apos;SERBATIC SISTEMAS TECNOLÓGICOS, S.A&apos;,  Sede_Venta__r.Name =&apos;SERBATIC SISTEMAS TECNOLÓGICOS, S.A&apos;) ,true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EsdeSerbatic</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sede_Venta_Filter__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Sede_Venta__r.Name,
+&apos;VASS Madrid&apos;, &apos;VASS Madrid Indus fil España&apos;,
+&apos;VASS Barcelona&apos;, &apos;VASS Barcelona fil España&apos;,
+&apos;VASS PERÚ&apos;, &apos;VASS Perú SOLA Latam AMERICAS&apos;,
+&apos;Nateevo Barcelona&apos;, &apos;Nateevo Barcelona España&apos;,
+&apos;VASS CHILE&apos;, &apos;VASS Chile SOLA Latam AMERICAS&apos;,
+&apos;VASS COLOMBIA&apos;, &apos;VASS Colombia SOLA Latam AMERICAS&apos;,
+&apos;VASS MEXICO&apos;, &apos;VASS México MEXICO&amp;CA Latam AMERICAS&apos;,
+&apos;NATEEVO DIGITAL SLU&apos;, &apos;Nateevo mad España&apos;,
+&apos;SERBATIC&apos;, &apos;Serbatic España&apos;,
+&apos;T4S&apos;, &apos;T4S Advance Solutions España&apos;,
+&apos;VASS GERMANY&apos;, &apos;VASS GERMANY&apos;,
+&apos;VASS NEDERLAND B.V&apos;, &apos;VASS BENELUX EMEA&apos;,
+&apos;NATEEVO M360&apos;, &apos;Nateevo M360 SOLA Latam AMERICAS&apos;,
+&apos;NATEEVO COLOMBIA&apos;, &apos;Nateevo COLOMBIA SOLA Latam AMERICAS &apos;,
+&apos;NATEEVO MÉXICO&apos;, &apos;Nateevo MÉXICO MEXICO&amp;CA Latam AMERICAS&apos;,
+&apos;VASS USA&apos;, &apos;VASS USA USA&amp;CA AMERICAS &apos;,
+&apos;Intelygenz USA&apos;, &apos;Intelygenz USA USA&amp;CA AMERICAS&apos;,
+&apos;VASS UK&apos;, &apos;VASS UK EMEA&apos;,
+&apos;CoPilot&apos;, &apos;CoPilot USA AMERICAS&apos;,
+&apos;VASS AUSTRALIA&apos;, &apos;VASS AUSTRALIA APJ&apos;,
+&apos;VASS CANADA&apos;, &apos;VASS CANADA USA&amp;CA AMERICAS&apos;,
+&apos;VASS IT Greece SA&apos;, &apos;VASS GREECE BENELUX&amp;GR EMEA &apos;,
+&apos;VASS LATVIA&apos;, &apos;VASS LATVIA DE&amp;LV&amp;RO EMEA&apos;,
+&apos;VASS MALASIA&apos;, &apos;VASS MALASIA APAC&apos;,
+&apos;VASS North Macedonia&apos;, &apos;VASS North Macedonia CH&amp;MK EMEA&apos;,
+&apos;VASS LUXEMBURG&apos;, &apos;VASS LUXEMBURG BENELUX&amp;GR EMEA&apos;,
+&apos;VASS SWEDEN&apos;, &apos;VASS SWEDEN EMEA&apos;,
+&apos;VASS Switzerland&apos;, &apos;VASS Switzerland CH&amp;MK EMEA&apos;,
+&apos;Inside Reality AG&apos;, &apos;VASS Switzerland CH&amp;MK EMEA&apos;,
+&apos;TECH TRAINING CAMPUS 4U, SL&apos;, &apos;TECH TRAINING CAMPUS 4U, SL ESPAÑA&apos;,
+&apos;VASS IT US&apos;, &apos;VASS IT US&apos;,
+&apos;VASS APJ&apos;, &apos;VASS APJ APAC&apos;,
+&apos;VASS IT US&apos;, &apos;VASS IT US AMERICAS&apos;,
+&apos;VASS PORTUGAL&apos;, &apos;VASS PORTUGAL EMEA&apos;,
+&apos;VASS ROMANIA&apos;, &apos;VASS ROMANIA DE&amp;LV&amp;RO EMEA&apos;,
+&apos;VASS EU SERVICES&apos;,&apos;VASS EU EMEA&apos;,
+&apos;null&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sede Venta Filter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Extraordinary_Sale_Check</fullName>
+    <active>true</active>
+    <description>The project line cannot be set as an extraordinary sale in the Opportunity stages Delivered, Presented or Won.</description>
+    <errorConditionFormula>AND(ISCHANGED(Venta_Extraordinaria__c ),Venta_Extraordinaria__c  , OR(ISPICKVAL( Oportunidad__r.StageName , &apos;Entregada&apos;)  ,ISPICKVAL( Oportunidad__r.StageName , &apos;Presentada&apos;),ISPICKVAL( Oportunidad__r.StageName , &apos;Ganada&apos;)))</errorConditionFormula>
+    <errorMessage>The project line cannot be set as an extraordinary sale in the Opportunity stages Delivered, Presented or Won. Return the opportunity related to this project line to a previous Stage to make it an extraordinary sale.</errorMessage>
+</ValidationRule>

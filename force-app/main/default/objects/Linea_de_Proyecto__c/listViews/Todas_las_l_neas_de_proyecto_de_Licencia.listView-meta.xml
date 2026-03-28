@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todas_las_l_neas_de_proyecto_de_Licencia</fullName>
+    <columns>NAME</columns>
+    <columns>Oportunidad__c</columns>
+    <columns>Cliente__c</columns>
+    <columns>Etapa__c</columns>
+    <columns>Gerencia__c</columns>
+    <columns>Area__c</columns>
+    <columns>Tecnologia__c</columns>
+    <columns>Responsable_de_LDP__c</columns>
+    <columns>Responsable_de_SW__c</columns>
+    <columns>Importe_total__c</columns>
+    <columns>Fecha_Inicio__c</columns>
+    <columns>Fecha_Fin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Linea_de_Proyecto__c.Licencias,Linea_de_Proyecto__c.Licencias_Renovaci_n,Linea_de_Proyecto__c.Licencias_Servicios</value>
+    </filters>
+    <filters>
+        <field>Etapa__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelada</value>
+    </filters>
+    <label>All licensesproject lines</label>
+</ListView>

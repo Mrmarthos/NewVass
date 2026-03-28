@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hitos_validados__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(Hito_1__c)), NOT(ISBLANK(Fecha_de_facturacion_1__c)) &amp;&amp; NOT(ISBLANK(Importe_a_facturar_1__c)),FALSE) &amp;&amp;
+IF(NOT(ISBLANK(Hito_2__c)), NOT(ISBLANK(Fecha_de_facturacion_2__c)) &amp;&amp; NOT(ISBLANK(Importe_a_facturar_2__c)),TRUE) &amp;&amp;
+IF(NOT(ISBLANK(Hito_3__c)), NOT(ISBLANK(Fecha_de_facturacion_3__c)) &amp;&amp; NOT(ISBLANK(Importe_a_facturar_3__c)),TRUE) &amp;&amp;
+IF(NOT(ISBLANK(Hito_4__c)), NOT(ISBLANK(Fecha_de_facturacion_4__c)) &amp;&amp; NOT(ISBLANK(Importe_a_facturar_4__c)),TRUE) &amp;&amp;
+Total_Importe_a_facturar__c = Importe_total__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Rellenado automáticamente cuando los hitos están correctamente informados.
+Debe haber al menos un hito y estar informadas las fechas e importes que procedan. Si los importes a facturar no suman el Importe Total, no se validará.</inlineHelpText>
+    <label>Hitos validados</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

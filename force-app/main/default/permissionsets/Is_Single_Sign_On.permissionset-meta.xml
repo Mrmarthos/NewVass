@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Otorga el permiso “Is Single Sign-On Enabled” a los usuarios que lo tengan asignado</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Is Single Sign-On</label>
+    <license>Salesforce</license>
+</PermissionSet>

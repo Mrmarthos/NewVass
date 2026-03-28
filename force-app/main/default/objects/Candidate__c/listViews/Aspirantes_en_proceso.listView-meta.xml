@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aspirantes_en_proceso</fullName>
+    <columns>NAME</columns>
+    <columns>Apellidos__c</columns>
+    <columns>Email__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Puesto__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Estado__c</field>
+        <operation>notEqual</operation>
+        <value>Oferta Rechazada,Oferta Aceptada</value>
+    </filters>
+    <label>Aspirantes en curso</label>
+</ListView>

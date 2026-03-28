@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EsIntercompany__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        Sede_Venta__r.GEO__c = &apos;SPAIN&apos;,
+        Cuenta__r.GEO__c != &apos;SPAIN&apos;
+    ),
+    false,
+    IF(
+        AND(
+            OR(
+                EsdeSerbatic__c = True,
+                EsDeNateevo__c = True,
+                Intercompanyt4scomu__c = true,
+                CONTAINS(Sede_Venta__r.Name, &apos;VASS&apos;)
+            ),
+            OR(
+                CONTAINS(Cuenta__r.Name, &apos;VASS&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;SERBATIC&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;NATEEVO&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;Movetia&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;VDSHOP REDCOM SL&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;CRI GREECE&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;ECENTA&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;T4S&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;Ecenta&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;VASS APJ&apos;),
+                CONTAINS(Cuenta__r.Name, &apos;Intelygenz Spain&apos;)
+            )
+        ),
+        true,
+        false
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EsIntercompany</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

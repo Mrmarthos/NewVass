@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tabla PEPS LP</label>
+    <pluralLabel>Tabla PEPS LPs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

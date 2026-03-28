@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creacion_lineas_en_Preventa</fullName>
+    <active>true</active>
+    <description>Cuando se crea una nueva Línea de proyecto en estado Preventa se valida que todos los campos necesarios estén validados.</description>
+    <errorConditionFormula>((ISNEW() || ISCLONE() ) &amp;&amp;  Nombre_Tipo_Registro__c !=&apos;Rate Card&apos;) &amp;&amp; ISPICKVAL(Oportunidad__r.StageName, &apos;Preventa&apos;) &amp;&amp;
+(
+ISBLANK(TEXT( Gerencia__c )) ||
+ISBLANK(TEXT( Area__c )) ||
+ISBLANK( Responsable_de_LDP__c ) ||
+ISBLANK(TEXT( Tecnologia__c )))</errorConditionFormula>
+    <errorMessage>La gerencia, área, tecnología y personas implicadas deben estar informadas para dar de alta una Línea de Proyecto estando la oportunidad ya en Preventa</errorMessage>
+</ValidationRule>

@@ -1,0 +1,158 @@
+<!--
+API : 49.00
+Author : Rahul Joshi
+Source : sfdcMonkey.com
+Date : Dec,2020
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global" 
+                controller="dataTableCtrl">
+    <!-- call doInit method on component load -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- aura attributes to store data/values --> 
+    <aura:attribute name="listOfAllAccounts" type="list"/> 
+    <aura:attribute name="PaginationList" type="list"/> 
+    <aura:attribute name="selectedCount" type="integer" default="0"
+                    description="selected Records Count"/>
+    <aura:attribute name="startPage" type="Integer" />
+    <aura:attribute name="endPage" type="Integer"/>
+    <aura:attribute name="totalRecordsCount" type="Integer"/>
+    <aura:attribute name="pageSize" type="Integer" default="6"
+                    description="number of records to be display on per page"/>
+    <aura:attribute name="currentPage" type="integer" default="1"/>
+    <aura:attribute name="totalPagesCount" type="integer"/>
+    <aura:attribute name="bNoRecordsFound" type="boolean"/>
+    
+    <aura:attribute name="cuenta" type="boolean" default ='False'/>
+    
+    
+    <lightning:card footer="Card Footer" title="Pending Tasks">
+        <aura:if isTrue="{!v.bNoRecordsFound}">
+            
+            <!--display error message if there is no records available -->
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                <span class="slds-assistive-text">error</span>
+                <h2>There are no pending Tasks</h2>
+            </div>
+            <aura:set attribute="else">
+                <!-- lightning:button to get selected rows data -->
+                
+                <!-- display total record and selected record count -->    
+                <p class="slds-m-around_small">
+                    <span class="slds-badge slds-badge_lightest" style="display:inline-block">
+                        Total Tasks: {!v.selectedCount > 0 ? v.selectedCount + '/' : ''} {!v.totalRecordsCount} 
+                    </span>
+                </p>
+                
+                <!-- data table start-->  
+                <div class="slds-scrollable_x" >
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <!--header checkbox for select all-->
+                            
+                            
+                            <th scope="col">
+                                <div class="slds-truncate" title="Subject">Subject</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Tipo">Type</div>
+                            </th>
+                            
+                            <th scope="col">
+                                <div class="slds-truncate" title="Mercado">Priority</div>
+                            </th>
+                            
+                            <aura:if isTrue="{!v.cuenta}">
+                                
+                                <th scope="col">
+                                    <div class="slds-truncate" title="FechaVencimiento">Owner</div>
+                                </th>
+                            </aura:if>  
+                            
+                            <th scope="col">
+                                <div class="slds-truncate" title="FechaVencimiento">Activity Date</div>
+                            </th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.PaginationList}" var="obj">
+                            <tr>
+                                
+                                <th scope="row">
+                                    
+                                    <div class="slds-truncate" title="{!obj.Tarea.Subject}">
+                                        <p><a data-caseid="{!obj.Tarea.Id}" onclick="{!c.handleClick}" > {!obj.Tarea.Subject}</a></p>
+                                    </div>
+                                </th> 
+                                <th scope="row">
+                                    <div class="slds-truncate" title="{!obj.Tarea.Tipo__c}">
+                                        {!obj.Tarea.Tipo__c}
+                                    </div>
+                                </th>
+                                <th scope="row">
+                                    <div class="slds-truncate" title="{!obj.Tarea.Mercado__c}">
+                                        {!obj.Tarea.Priority}
+                               
+                                    </div>
+                                </th>
+                                <aura:if isTrue="{!v.cuenta}">
+                                    <th scope="row">
+                                        <div class="slds-truncate" title="{!obj.Owner.Name}">
+                                            {!obj.Tarea.Owner.Name}
+                                            
+                                            
+                                        </div>
+                                    </th>
+                                </aura:if> 
+                                <th scope="row">
+                                    <div class="slds-truncate" title="{!obj.Tarea.ActivityDate}">
+                                        {!obj.Tarea.ActivityDate}
+                                        
+                                        
+                                    </div>
+                                </th>
+                                
+                            </tr>
+                        </aura:iteration>
+                    </tbody>
+                </table>
+                <!-- DataTable End -->
+                <br/>
+                <!--  Pagination Buttons Start -->
+          <aura:if isTrue="{!greaterthan(v.totalRecordsCount,v.pageSize)}">            
+              <div class="slds-align_absolute-center">         
+                  <lightning:button label="Previous"
+                                    disabled="{!v.startPage == 0}"  
+                                    onclick="{!c.navigation}"
+                                    variant="brand"
+                                    iconName="utility:back"
+                                    name="previous"/>
+                  
+                  <span class="slds-badge slds-badge_lightest"
+                        style="margin-right: 10px;margin-left: 10px;">
+                      Page {!v.currentPage} out of {!v.totalPagesCount}
+                  </span>
+                  
+                  <lightning:button label="Next"
+                                    disabled="{!(v.endPage + 1) >= v.totalRecordsCount}" 
+                                    onclick="{!c.navigation}"
+                                    variant="brand"
+                                    iconName="utility:forward"
+                                    iconPosition="right"
+                                    name="next"/>
+              </div>  
+     	  </aura:if> 
+                </div> 
+                    
+                <!--  Pagination Buttons End -->
+            </aura:set> 
+        </aura:if>
+        <aura:set attribute="footer">
+            
+        </aura:set>
+    </lightning:card>
+    
+</aura:component>

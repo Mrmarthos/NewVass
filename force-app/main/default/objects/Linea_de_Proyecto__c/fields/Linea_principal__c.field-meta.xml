@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Linea_principal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indica si se trata o no del proyecto principal dentro de la oportunidad. Usado posteriormente para generar los PEPs en SAP.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows if its the main opportunity proyect. Used after to generate PEP in SAP:</inlineHelpText>
+    <label>Línea principal</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

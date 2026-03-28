@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GSO_Sede__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Sede_Venta__r.Name,
+    &apos;VASS Madrid&apos;, &apos;VASS Madrid&apos;,
+    &apos;VASS Barcelona&apos;, &apos;VASS Barcelona&apos;,
+    &apos;VASS PERÚ&apos;, &apos;VASS Peru&apos;,
+    &apos;Nateevo Barcelona&apos;, &apos;Nateevo Barcelona&apos;,
+    &apos;VASS CHILE&apos;, &apos;VASS Chile&apos;,
+    &apos;VASS COLOMBIA&apos;, &apos;VASS Colombia&apos;,
+    &apos;VASS MEXICO&apos;, &apos;VASS México&apos;,
+    &apos;NATEEVO DIGITAL SLU&apos;, &apos;Nateevo Madrid&apos;,
+    &apos;SERBATIC&apos;, &apos;Serbatic&apos;,
+    &apos;T4S&apos;, &apos;T4S&apos;,
+    &apos;VASS GERMANY&apos;, &apos;VASS Germany&apos;,
+    &apos;VASS NEDERLAND B.V&apos;, &apos;VASS Nederland&apos;,
+    &apos;NATEEVO M360&apos;, &apos;Nateevo Mexico&apos;,
+    &apos;NATEEVO COLOMBIA&apos;, &apos;Nateevo Colombia&apos;,
+    &apos;NATEEVO MÉXICO&apos;, &apos;Nateevo Mexico&apos;,
+    &apos;VASS USA&apos;, &apos;VASS USA&apos;,
+    &apos;Intelygenz USA&apos;, &apos;Intelygenz USA&apos;,
+    &apos;Intelygenz Spain&apos;, &apos;Intelygenz España&apos;,
+    &apos;VASS UK&apos;, &apos;VASS UK&apos;,
+    &apos;CoPilot&apos;, &apos;CoPilot&apos;,
+    &apos;VASS AUSTRALIA&apos;, &apos;VASS Australia&apos;,
+    &apos;VASS CANADA&apos;, &apos;VASS Canada&apos;,
+    &apos;VASS GREECE&apos;, &apos;VASS Greece&apos;,
+    &apos;VASS LATVIA&apos;, &apos;VASS Latvia&apos;,
+    &apos;VASS MALASIA&apos;, &apos;VASS Malasia&apos;,
+    &apos;VASS North Macedonia&apos;, &apos;VASS Macedonia&apos;,
+    &apos;VASS LUXEMBURG&apos;, &apos;VASS Luxemburg&apos;,
+    &apos;VASS SWEDEN&apos;, &apos;VASS Sweden&apos;,
+    &apos;VASS Switzerland&apos;, &apos;VASS Switzerland&apos;,
+    &apos;VASS IT US&apos;, &apos;VASS IT US&apos;,
+    &apos;VASS APJ&apos;, &apos;VASS APJ&apos;,
+    &apos;VASS PORTUGAL&apos;, &apos;VASS Portugal&apos;,
+    &apos;VASS ROMANIA&apos;, &apos;VASS Romania&apos;,
+    &apos;VASS EU&apos;, &apos;VASS EU EMEA&apos;,
+    &apos;Computer Resources International&apos;,&apos;VASS EU EMEA&apos;,
+ &apos;VASS EU SERVICES FR&apos;,&apos;VASS EU EMEA&apos;,
+ &apos;Inside Reality AG&apos;,&apos;Inside Reality AG&apos;,
+ &apos;Zington AB&apos;,&apos;VASS Sweden&apos;,
+    &apos;null&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GSO Sede</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_nea_de_Proyecto__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Linea de proyecto que falla</description>
+    <externalId>false</externalId>
+    <label>Línea de Proyecto</label>
+    <referenceTo>Linea_de_Proyecto__c</referenceTo>
+    <relationshipLabel>Logs</relationshipLabel>
+    <relationshipName>Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

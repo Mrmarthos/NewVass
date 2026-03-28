@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_Perdida__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo Perdida</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acreditaciones/Referencias</fullName>
+                <default>false</default>
+                <label>Acreditaciones/Referencias</label>
+            </value>
+            <value>
+                <fullName>Económico</fullName>
+                <default>false</default>
+                <label>Económico</label>
+            </value>
+            <value>
+                <fullName>Técnico</fullName>
+                <default>false</default>
+                <label>Técnico</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>No cumplimos requisitos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No cumplimos requisitos</label>
+            </value>
+            <value>
+                <fullName>No les gusta el nuevo logo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No les gusta el nuevo logo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

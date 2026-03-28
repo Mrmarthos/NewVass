@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GTM_Reason_For_Cancellation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL (Stage__c, &quot;Close/Cancelled&quot;) &amp;&amp; ISBLANK (TEXT(ReasonOfCancellation__c))</errorConditionFormula>
+    <errorDisplayField>ReasonOfCancellation__c</errorDisplayField>
+    <errorMessage>You must complete Reason of Cancellation</errorMessage>
+</ValidationRule>

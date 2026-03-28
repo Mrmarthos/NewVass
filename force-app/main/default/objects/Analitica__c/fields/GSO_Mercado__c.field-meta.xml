@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GSO_Mercado__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( Mercado__c, &quot;A.Pub-Admin. Pública&quot; ), &quot;	A.Pub-Admin. Pública&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Banca-Banca&quot; ), &quot;Banca-Banca&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Energía&quot; ), &quot;Energía&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Environment&quot; ), &quot;Energía&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Industria-Industria&quot; ), &quot;Industria&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Seguros-Seguros&quot; ), &quot;Seguros-Seguros&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Telco-Media&quot; ), &quot;Telco&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Telco-Telco&quot; ), &quot;Telco&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Industria-Retail&quot; ), &quot;Industria-Retail&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Industria-Travel&quot; ), &quot;Industria-Travel&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Retail &amp; Consu Goods&quot; ), &quot;Retail &amp; Consu Goods&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Logistics &amp; Transportation&quot; ), &quot;Logistics &amp; Transportation&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Automotive &amp; Mobility&quot; ), &quot;Automotive &amp; Mobility&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Life Science&quot; ), &quot;Life Science&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Manufacturing&quot; ), &quot;Manufacturing&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Travel &amp; Hospitality &amp; Leisure&quot; ), &quot;Travel &amp; Hospitality &amp; Leisure&quot;,null )&amp;
+IF ( INCLUDES ( Mercado__c, &quot;Education &amp; Services&quot; ), &quot;Education &amp; Services&quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GSO Mercado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

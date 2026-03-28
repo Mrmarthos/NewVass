@@ -1,0 +1,5 @@
+<design:component >
+    <design:attribute name="type" />
+    <design:attribute name="messageText" />
+    <design:attribute name="title" />
+</design:component>

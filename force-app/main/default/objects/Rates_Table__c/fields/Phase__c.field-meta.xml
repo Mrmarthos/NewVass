@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase__c</fullName>
+    <externalId>false</externalId>
+    <label>Phase</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preparation</fullName>
+                <default>false</default>
+                <label>Preparation</label>
+            </value>
+            <value>
+                <fullName>Design - Req. Gathering</fullName>
+                <default>false</default>
+                <label>Design - Req. Gathering</label>
+            </value>
+            <value>
+                <fullName>Design - Specification</fullName>
+                <default>false</default>
+                <label>Design - Specification</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Test / UAT</fullName>
+                <default>false</default>
+                <label>Test / UAT</label>
+            </value>
+            <value>
+                <fullName>Test / Cutover Prep</fullName>
+                <default>false</default>
+                <label>Test / Cutover Prep</label>
+            </value>
+            <value>
+                <fullName>Launch</fullName>
+                <default>false</default>
+                <label>Launch</label>
+            </value>
+            <value>
+                <fullName>Hypercare</fullName>
+                <default>false</default>
+                <label>Hypercare</label>
+            </value>
+            <value>
+                <fullName>Cutover Prep</fullName>
+                <default>false</default>
+                <label>Cutover Prep</label>
+            </value>
+            <value>
+                <fullName>Launch + Hypercare</fullName>
+                <default>false</default>
+                <label>Launch + Hypercare</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

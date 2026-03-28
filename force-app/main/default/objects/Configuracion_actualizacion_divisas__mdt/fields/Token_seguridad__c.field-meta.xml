@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Token_seguridad__c</fullName>
+    <description>Token de seguridad del usuario (necesario junto al nombre de usuario y la contraseña)</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Token seguridad</label>
+    <required>true</required>
+    <type>TextArea</type>
+</CustomField>

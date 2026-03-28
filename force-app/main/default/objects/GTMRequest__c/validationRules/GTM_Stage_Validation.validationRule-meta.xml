@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GTM_Stage_Validation</fullName>
+    <active>true</active>
+    <description>Validation rule to prevent the user from creating a GTM Request in differente Stages</description>
+    <errorConditionFormula>AND(ISNEW(), NOT (ISPICKVAL(Stage__c, &quot;Request&quot;)))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>GTM Request must be created in the &quot;Request&quot; stage.</errorMessage>
+</ValidationRule>

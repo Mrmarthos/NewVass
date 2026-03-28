@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens,flexipage:availableForRecordHome,force:hasRecordId" controller = "SAPCheckNIFCalloutUtil" >
+    <aura:attribute name="type" type="string" default="warning" />
+    <aura:attribute name="messageText" type="string" default="No se ha podido validar el NIF de la cuenta."/>
+    <aura:attribute name="title" type="string" default="¡Aviso!"/>
+    <aura:handler name="init" value="{!this}" action="{!c.getAccount}"/>
+</aura:component>
